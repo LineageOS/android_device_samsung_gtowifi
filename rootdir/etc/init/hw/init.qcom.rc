@@ -405,6 +405,9 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
+    # change tap2wake node owner
+    chown system system /sys/class/touchscreen/touchpanel/tap2wake
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
