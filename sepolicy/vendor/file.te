@@ -6,3 +6,6 @@ type wifi_efs_file, file_type, mlstrustedobject;
 
 # Persist
 type persist_wifi_file, file_type;
+
+# Touchscreen
+type sysfs_touchpanel, sysfs_type, fs_type;
