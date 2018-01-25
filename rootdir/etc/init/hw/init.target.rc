@@ -163,11 +163,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-send-rule stream 0660 system system
    group root
 
-service audiod /system/vendor/bin/audiod
-   class late_start
-   user system
-   group system
-
 on boot
     start rmt_storage
     insmod /system/lib/modules/adsprpc.ko
