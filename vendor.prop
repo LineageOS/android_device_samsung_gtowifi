@@ -1,6 +1,3 @@
-# APEX
-ro.apex.updatable=false
-
 # Audio
 vendor.audio_hal.period_size=192
 ro.vendor.audio.sdk.fluencetype=none
