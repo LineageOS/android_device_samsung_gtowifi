@@ -82,6 +82,16 @@
     <hal format="native">
         <name>netutils-wrapper</name>
         <version>1.0</version>
+    </hal> 
+    <hal format="hidl">
+        <name>vendor.qti.hardware.wigig.netperftuner</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INetPerfTuner</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::INetPerfTuner/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.atcmdfwd</name>

@@ -1772,6 +1772,10 @@ vendor/lib64/libhdcpsrm.so
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 
+# WiFi (WiGig)
+vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
+
 # rootdir
 vendor/bin/hw/rild
 vendor/bin/adpl
