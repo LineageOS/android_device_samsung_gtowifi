@@ -100,9 +100,6 @@ endif
 ifeq ($(call is-platform-sdk-version-at-least,26),true)
 USE_DISPLAY_SERVICE := true
 LOCAL_CFLAGS += -DUSE_DISPLAY_SERVICE
-LOCAL_CFLAGS += -std=c++14 -std=gnu++1z
-else
-LOCAL_CFLAGS += -std=c++14 -std=gnu++1z
 endif
 
 #Android P onwards we use vendor prefix
