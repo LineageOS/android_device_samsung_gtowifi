@@ -272,7 +272,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
-    wificond \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     wcnss_service  \
