@@ -929,15 +929,6 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 # Charger
 vendor/bin/hvdcp_opti
 
-# Device Health
-vendor/bin/hw/android.hardware.health@2.1-service-samsung
-vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
--vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
-vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib/vendor.samsung.hardware.health@2.0.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib64/vendor.samsung.hardware.health@2.0.so
-
 # DPM
 framework/tcmclient.jar
 system_ext/framework/com.qti.dpmframework.jar
