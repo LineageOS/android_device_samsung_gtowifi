@@ -29,9 +29,6 @@ function blob_fixup() {
         vendor/lib/hw/camera.msm8937.so)
             "${PATCHELF}" --remove-needed android.hidl.base@1.0.so "${2}"
             ;;
-        vendor/lib*/hw/android.hardware.health@2.0-impl-2.1-samsung.so)
-            "${PATCHELF}" --replace-needed libutils.so libutils-v30.so "${2}"
-            ;;
     esac
 }
 
