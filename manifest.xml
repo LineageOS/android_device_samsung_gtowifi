@@ -406,16 +406,6 @@
         <fqname>@2.0::ISehGnss/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.samsung.hardware.miscpower</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehMiscPower</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::ISehMiscPower/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.samsung.hardware.security.widevine.keyprov</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
