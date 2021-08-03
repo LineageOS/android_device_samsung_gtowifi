@@ -26,17 +26,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 #
-# SSWAP
-on boot
-    write /proc/sys/vm/swappiness 145
-
-service swapon /system/bin/sswap -s -z -f 1536
-    class core
-    user system
-    group system
-    capabilities SYS_ADMIN
-    seclabel u:r:sswap:s0
-    oneshot
 
 service vendor.netmgrd /system/vendor/bin/netmgrd
     class main
