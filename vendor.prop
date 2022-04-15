@@ -76,6 +76,7 @@ vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=true
 
 # Bluetooth
+bluetooth.device.default_name=Galaxy Tab A 8.0 (2019)
 persist.vendor.bt.enable.splita2dp=false
 persist.vendor.qcom.bluetooth.soc=pronto
 persist.vendor.qcom.bluetooth.enable.splita2dp=false
