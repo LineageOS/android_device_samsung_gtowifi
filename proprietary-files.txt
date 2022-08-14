@@ -44,7 +44,7 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioparsers.so
--vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudio_log_utils.so
 vendor/lib/libdrc.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libasphere.so
@@ -60,7 +60,7 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
--vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libaudio_log_utils.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
@@ -185,16 +185,16 @@ lib/com.quicinc.cne.server@2.2.so
 lib/com.quicinc.cne.server@2.3.so
 lib/vendor.qti.hardware.data.connection@1.0.so
 lib/vendor.qti.hardware.data.qmi@1.0.so
--lib64/com.quicinc.cne.api@1.0.so
--lib64/com.quicinc.cne.api@1.1.so
--lib64/com.quicinc.cne.constants@1.0.so
--lib64/com.quicinc.cne.constants@2.0.so
--lib64/com.quicinc.cne.constants@2.1.so
--lib64/com.quicinc.cne.server@1.0.so
--lib64/com.quicinc.cne.server@2.0.so
--lib64/com.quicinc.cne.server@2.1.so
--lib64/com.quicinc.cne.server@2.2.so
--lib64/com.quicinc.cne.server@2.3.so
+lib64/com.quicinc.cne.api@1.0.so
+lib64/com.quicinc.cne.api@1.1.so
+lib64/com.quicinc.cne.constants@1.0.so
+lib64/com.quicinc.cne.constants@2.0.so
+lib64/com.quicinc.cne.constants@2.1.so
+lib64/com.quicinc.cne.server@1.0.so
+lib64/com.quicinc.cne.server@2.0.so
+lib64/com.quicinc.cne.server@2.1.so
+lib64/com.quicinc.cne.server@2.2.so
+lib64/com.quicinc.cne.server@2.3.so
 lib64/vendor.qti.hardware.data.connection@1.0.so
 lib64/vendor.qti.hardware.data.qmi@1.0.so
 -priv-app/CNEService/CNEService.apk
@@ -211,15 +211,15 @@ vendor/lib/libxml.so
 vendor/lib/vendor.qti.hardware.data.connection@1.0.so
 vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
--vendor/lib64/com.quicinc.cne.api@1.0.so
--vendor/lib64/com.quicinc.cne.api@1.1.so
--vendor/lib64/com.quicinc.cne.constants@1.0.so
--vendor/lib64/com.quicinc.cne.constants@2.0.so
--vendor/lib64/com.quicinc.cne.constants@2.1.so
--vendor/lib64/com.quicinc.cne.server@2.0.so
--vendor/lib64/com.quicinc.cne.server@2.1.so
--vendor/lib64/com.quicinc.cne.server@2.2.so
--vendor/lib64/com.quicinc.cne.server@2.3.so
+vendor/lib64/com.quicinc.cne.api@1.0.so
+vendor/lib64/com.quicinc.cne.api@1.1.so
+vendor/lib64/com.quicinc.cne.constants@1.0.so
+vendor/lib64/com.quicinc.cne.constants@2.0.so
+vendor/lib64/com.quicinc.cne.constants@2.1.so
+vendor/lib64/com.quicinc.cne.server@2.0.so
+vendor/lib64/com.quicinc.cne.server@2.1.so
+vendor/lib64/com.quicinc.cne.server@2.2.so
+vendor/lib64/com.quicinc.cne.server@2.3.so
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
@@ -2083,8 +2083,8 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 
 # Display-Hardware
--lib/libsdm-disp-apis.so
--lib64/libsdm-disp-apis.so
+lib/libsdm-disp-apis.so
+lib64/libsdm-disp-apis.so
 vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.msm8937.so
@@ -2133,10 +2133,10 @@ vendor/etc/media_codecs_dolby_audio.xml
 # FM
 lib/fm_helium.so
 lib/libfm-hci.so
--lib/vendor.qti.hardware.fm@1.0.so
+lib/vendor.qti.hardware.fm@1.0.so
 lib64/fm_helium.so
 lib64/libfm-hci.so
--lib64/vendor.qti.hardware.fm@1.0.so
+lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib/ftm_fm_lib.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/ftm_fm_lib.so
@@ -2342,7 +2342,7 @@ vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
--vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
@@ -2369,7 +2369,7 @@ vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
--vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libtinyxml2_1.so
 
 # IOP
@@ -2893,8 +2893,8 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
 
 # Thermal-Hardware
 vendor/lib/hw/thermal.msm8937.so
