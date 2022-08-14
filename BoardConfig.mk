@@ -54,13 +54,27 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/samsung/sdm429
+BOARD_BOOT_HEADER_VERSION := 1
+BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci earlycon=msm_serial_dm,0x78B0000 androidboot.usbconfigfs=true loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
+BOARD_RAMDISK_OFFSET := 0x80000000
+BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+TARGET_KERNEL_ADDITIONAL_FLAGS := SEC_BUILD_OPTION_VTS=true
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_CONFIG := gtowifi_eur_open_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/sdm429
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 TARGET_COPY_OUT_VENDOR := vendor
 
 # QCOM
