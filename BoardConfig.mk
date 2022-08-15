@@ -92,6 +92,12 @@ VENDOR_SECURITY_PATCH := 2019-05-01
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# Treble
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_VENDOR_MOVE_ENABLED := true
+BOARD_VNDK_VERSION := current
+
 # Vendor files
 include vendor/samsung/gtowifi/BoardConfigVendor.mk
 
