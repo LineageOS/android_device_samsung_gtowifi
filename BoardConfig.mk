@@ -15,6 +15,7 @@
 #
 
 BUILD_BROKEN_DUP_RULES := true
+ALLOW_MISSING_DEPENDENCIES	:= true
 
 DEVICE_PATH := device/samsung/gtowifi
 
