@@ -94,7 +94,6 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 
@@ -117,6 +116,7 @@ TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := lineageos_gtowifi_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/sdm429
+TARGET_KERNEL_VERSION := 4.9
 
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
