@@ -149,6 +149,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     ueventd.qcom.rc
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/configstore@1.1.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/configstore@1.1.policy \
