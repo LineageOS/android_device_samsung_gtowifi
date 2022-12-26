@@ -599,7 +599,4 @@
         </interface>
         <fqname>@1.0::Iwvkprov_server/default</fqname>
     </hal>
-    <sepolicy>
-        <version>28.0</version>
-    </sepolicy>
 </manifest>
