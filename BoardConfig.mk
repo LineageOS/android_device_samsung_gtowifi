@@ -70,7 +70,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := SEC_BUILD_OPTION_VTS=true
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := gtowifi_eur_open_defconfig
+TARGET_KERNEL_CONFIG := lineageos_gtowifi_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/sdm429
 
 # Partitions
