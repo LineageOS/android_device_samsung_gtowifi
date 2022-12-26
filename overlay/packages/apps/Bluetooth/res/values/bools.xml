@@ -21,13 +21,11 @@
     <bool name="profile_supported_hid_device_ss">true</bool>
     <bool name="profile_supported_hid_host_ss">true</bool>
     <bool name="profile_supported_hs_hfp">true</bool>
-    <item type="bool" name="profile_supported_map">@android:bool/config_wifi_softap_ieee80211ac_supported</item>
     <bool name="profile_supported_map_email_support">true</bool>
     <bool name="profile_supported_map_mms_support">true</bool>
     <bool name="profile_supported_mapmce">false</bool>
     <bool name="profile_supported_opp">true</bool>
     <bool name="profile_supported_pan">true</bool>
-    <item type="bool" name="profile_supported_pbap">@android:bool/config_wifi_softap_ieee80211ac_supported</item>
     <bool name="profile_supported_pbapclient">false</bool>
     <bool name="profile_supported_sap">true</bool>
     <bool name="strict_location_check">false</bool>
