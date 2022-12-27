@@ -27,7 +27,7 @@
 #
 
 # Define fastmmi
-service fastmmi /system/bin/mmi
+service fastmmi /system_ext/bin/mmi
     user root
     group root
     disabled
@@ -37,7 +37,7 @@ service vendor.mmid /vendor/bin/mmid
     group root
     disabled
 
-service mmi_diag /system/bin/mmi_diag
+service mmi_diag /system_ext/bin/mmi_diag
         class main
         user root
         group root oem_2901
@@ -47,7 +47,7 @@ on property:vendor.sys.boot_mode=ffbm
     write ${persist.vendor.mmi.misc_dev_path} "ffbm-01"
 
 on property:vendor.sys.boot_mode=qmmi
-    write ${persist.vendor.mmi.misc_dev_path} "ffbm-02"
+    write ${persist.vendor.mmi.misc_dev_path} "qmmi"
 
 on property:vendor.sys.boot_mode=normal
     write ${persist.vendor.mmi.misc_dev_path} "normal"
@@ -65,7 +65,7 @@ on factory-fs && property:ro.bootmode=ffbm-01
 # which cause the diag/Wwan/modem port all be lost in qmmi mode. Details:
 # UsbDeviceManager.java---->getDefaultFunctions and trySetEnabledFunctions
 on property:persist.vendor.usb.config=*
-    setprop persist.sys.usb.ffbm-02.func ${persist.vendor.usb.config}
+    setprop persist.sys.usb.qmmi.func ${persist.vendor.usb.config}
 
 on mmi && property:ro.bootmode=ffbm-00
     # ========================================================
@@ -98,6 +98,9 @@ on property:persist.vendor.usb.config=* && property:ro.bootmode=ffbm-01
     setprop sys.usb.config ${persist.vendor.usb.config}
 
 on property:persist.vendor.usb.config=* && property:ro.bootmode=ffbm-02
+    setprop sys.usb.config ${persist.vendor.usb.config}
+
+on property:persist.vendor.usb.config=* && property:ro.bootmode=qmmi
     setprop sys.usb.config ${persist.vendor.usb.config}
 
 on ffbm
@@ -220,31 +223,31 @@ service vendor.audio_tc253 /vendor/bin/mm-audio-ftm -tc 253
     disabled
     oneshot
 
-service vendor.audio_tc11 /vendor/bin/mm-audio-ftm -tc 11
+service vendor.audio_tc11 /vendor/bin/mm-audio-ftm -tc 11 -file /data/vendor/audio/ftm_headset_mic_record.wav
     user audio
     group audio
     disabled
     oneshot
 
-service vendor.audio_tc101 /vendor/bin/mm-audio-ftm -tc 101
+service vendor.audio_tc101 /vendor/bin/mm-audio-ftm -tc 101 -file /data/vendor/audio/ftm_mic1_record.wav
     user audio
     group audio
     disabled
     oneshot
 
-service vendor.audio_tc102 /vendor/bin/mm-audio-ftm -tc 102
+service vendor.audio_tc102 /vendor/bin/mm-audio-ftm -tc 102 -file /data/vendor/audio/ftm_mic2_record.wav
     user audio
     group audio
     disabled
     oneshot
 
-service vendor.audio_tc103 /vendor/bin/mm-audio-ftm -tc 103
+service vendor.audio_tc103 /vendor/bin/mm-audio-ftm -tc 103 -file /data/vendor/audio/ftm_mic3_record.wav
     user audio
     group audio
     disabled
     oneshot
 
-service vendor.audio_tc104 /vendor/bin/mm-audio-ftm -tc 104
+service vendor.audio_tc104 /vendor/bin/mm-audio-ftm -tc 104 -file /data/vendor/audio/ftm_mic4_record.wav
     user audio
     group audio
     disabled

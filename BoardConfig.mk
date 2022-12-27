@@ -1,19 +1,11 @@
 #
-# Copyright (C) 2021 The Android Open Source Project
+# Copyright (C) 2021-2022 The Android Open Source Project
+# Copyright (C) 2022 SebaUbuntu's TWRP device tree generator
 # Copyright (C) 2022 The LineageOS Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# SPDX-License-Identifier: Apache-2.0
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
+
 
 BUILD_BROKEN_DUP_RULES := true
 ALLOW_MISSING_DEPENDENCIES	:= true
@@ -37,14 +29,14 @@ TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
-
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := gtowifi
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := SRPSB22C003
 
 # Audio
 AUDIO_FEATURE_ENABLED_AHAL_EXT := false
@@ -92,31 +84,46 @@ TARGET_USES_YCRCB_CAMERA_PREVIEW := true
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
+# File systems
+BOARD_HAS_LARGE_FILESYSTEM := true
+#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864 # This is the maximum known partition size, but it can be higher, so we just omit it
+BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+TARGET_COPY_OUT_VENDOR := vendor
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 
-BOARD_KERNEL_CMDLINE := androidboot.bootdevice=7824900.sdhci earlycon=msm_serial_dm,0x78B0000 androidboot.usbconfigfs=true 
-BOARD_KERNEL_CMDLINE := loop.max_part=7
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78B0000 androidboot.usbconfigfs=true 
+BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-BOARD_KERNEL_IMAGE_NAME := Image.gz
-BOARD_KERNEL_PAGESIZE := 2048
-BOARD_BOOT_HEADER_VERSION := 1
-BOARD_BOOT_HEADER_NAME := SRPSB22C003
-BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_TAGS_OFFSET := 0x01e00000
-BOARD_KERNEL_OFFSET := 0x00008000
-BOARD_RAMDISK_OFFSET := 0x02000000
-BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_MKBOOTIMG_ARGS += --board $(TARGET_BOARD_NAME)
-TARGET_KERNEL_ADDITIONAL_FLAGS := SEC_BUILD_OPTION_VTS=true
-TARGET_KERNEL_ARCH := arm64
+BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := lineageos_gtowifi_defconfig
+BOARD_BOOTIMG_HEADER_VERSION := 1
+BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_RAMDISK_OFFSET := 0x02000000
+BOARD_KERNEL_TAGS_OFFSET := 0x01e00000
+BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
+BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+BOARD_MKBOOTIMG_ARGS += --board $(TARGET_BOARD_NAME)
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/samsung/sdm429
+TARGET_KERNEL_CONFIG := lineageos_gtowifi_defconfig
 TARGET_KERNEL_VERSION := 4.9
 
 # Keymaster
@@ -124,22 +131,6 @@ TARGET_KEYMASTER_VARIANT := samsung
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
-
-# Partitions
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
-BOARD_CACHEIMAGE_PARTITION_SIZE := 317718528
-BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_DTBOIMG_PARTITION_SIZE := 8388608
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x04000000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0xF3000000
-BOARD_VENDORIMAGE_PARTITION_SIZE := 796917760
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_COPY_OUT_VENDOR := vendor
-TARGET_USES_MKE2FS := true
-BOARD_HAS_LARGE_FILESYSTEM := true
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
