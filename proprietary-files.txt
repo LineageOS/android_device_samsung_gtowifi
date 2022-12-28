@@ -9,12 +9,14 @@ vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libfastcvadsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ADSP-Modules
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
@@ -94,12 +96,10 @@ vendor/etc/acdbdata/MTP_sea/MTP_sea_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP_sea/MTP_sea_workspaceFile.qwsp
 
 # Audio-Hardware
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.msm8937.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
-vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.msm8937.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
@@ -109,11 +109,25 @@ vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/libbt-hidlclient.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
+vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
+vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 
 # Bluetooth-AptX
 lib64/libaptX_encoder.so
@@ -184,14 +198,26 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
+vendor/lib/libseemore.so
 vendor/lib/libswvdec.so
 vendor/lib/libvideoutils.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib/libwa_widelens_undistort.so
 vendor/lib64/libbase64.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
+vendor/lib64/libseemore.so
 vendor/lib64/libswvdec.so
 vendor/lib64/libvideoutils.so
+
+# Camera-provider
+lib/vendor.samsung.hardware.camera.device@5.0.so:vendor/lib/vendor.samsung.hardware.camera.device@5.0.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib/android.hardware.camera.provider@2.4-external.so
+vendor/lib/android.hardware.camera.provider@2.4-legacy.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib64/android.hardware.camera.provider@2.4-external.so
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
 # Camera-actuators
@@ -759,6 +785,7 @@ vendor/etc/camera/s5k5e9yu05_mono_chromatix.xml
 # Camera-firmware
 vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_12_0.fw
+vendor/firmware/cpp_firmware_v1_12_1.fw
 vendor/firmware/cpp_firmware_v1_1_1.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 vendor/firmware/cpp_firmware_v1_2_0.fw
@@ -1020,49 +1047,62 @@ vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
 
 # DRM-Widevine
-vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libwvhidl.so
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 
 # Display-Hardware
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.msm8937.so
 vendor/lib/hw/hwcomposer.msm8937.so
 vendor/lib/hw/memtrack.msm8937.so
+vendor/lib/libdisplayconfig.qti.so
 vendor/lib/libdrm.so
 vendor/lib/libdrmutils.so
 vendor/lib/libgpu_tonemapper.so
+vendor/lib/libgralloc.qti.so
 vendor/lib/libgrallocutils.so
 vendor/lib/libqdMetaData.so
 vendor/lib/libqdutils.so
 vendor/lib/libqservice.so
 vendor/lib/vendor.display.config@1.0.so
 vendor/lib/vendor.display.config@1.1.so
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib64/hw/gralloc.default.so
+vendor/lib/vendor.display.config@1.10.so
+vendor/lib/vendor.display.config@1.11.so
+vendor/lib/vendor.display.config@1.2.so
+vendor/lib/vendor.display.config@1.3.so
+vendor/lib/vendor.display.config@1.4.so
+vendor/lib/vendor.display.config@1.5.so
+vendor/lib/vendor.display.config@1.6.so
+vendor/lib/vendor.display.config@1.7.so
+vendor/lib/vendor.display.config@1.8.so
+vendor/lib/vendor.display.config@1.9.so
+vendor/lib/vendor.display.config@2.0.so
 vendor/lib64/hw/gralloc.msm8937.so
 vendor/lib64/hw/hwcomposer.msm8937.so
 vendor/lib64/hw/memtrack.msm8937.so
+vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdrm.so
 vendor/lib64/libdrmutils.so
 vendor/lib64/libgpu_tonemapper.so
+vendor/lib64/libgralloc.qti.so
 vendor/lib64/libgrallocutils.so
 vendor/lib64/libqdMetaData.so
 vendor/lib64/libqdutils.so
 vendor/lib64/libqservice.so
 vendor/lib64/vendor.display.config@1.0.so
 vendor/lib64/vendor.display.config@1.1.so
+vendor/lib64/vendor.display.config@1.10.so
+vendor/lib64/vendor.display.config@1.11.so
 vendor/lib64/vendor.display.config@1.2.so
 vendor/lib64/vendor.display.config@1.3.so
 vendor/lib64/vendor.display.config@1.4.so
 vendor/lib64/vendor.display.config@1.5.so
 vendor/lib64/vendor.display.config@1.6.so
 vendor/lib64/vendor.display.config@1.7.so
+vendor/lib64/vendor.display.config@1.8.so
+vendor/lib64/vendor.display.config@1.9.so
+vendor/lib64/vendor.display.config@2.0.so
 
 # Dolby
 vendor/etc/dolby/dax-default.xml
@@ -1143,6 +1183,8 @@ vendor/lib/liblocationservice.so
 vendor/lib/liblocationservice_glue.so
 vendor/lib/liblowi_client.so
 vendor/lib/liblowi_wifihal.so
+vendor/lib/libqti_vndfwk_detect.so
+vendor/lib/libsemnativecarrierfeature.so
 vendor/lib/libxtadapter.so
 vendor/lib/vendor.qti.gnss@1.0.so
 vendor/lib/vendor.qti.gnss@1.1.so
@@ -1167,6 +1209,8 @@ vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
+vendor/lib64/libqti_vndfwk_detect.so
+vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/vendor.qti.gnss@1.0.so
 vendor/lib64/vendor.qti.gnss@1.1.so
@@ -1267,11 +1311,13 @@ vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
+vendor/lib/libqcbor.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 
 # Keystore
@@ -1412,6 +1458,7 @@ vendor/etc/perf/perf-profile1.conf
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
+vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
@@ -1423,6 +1470,7 @@ vendor/lib/vendor.qti.hardware.perf@2.1.so
 vendor/lib/vendor.qti.hardware.perf@2.2.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
+vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
@@ -1464,13 +1512,7 @@ vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # Power-Hardware
-vendor/bin/hw/android.hardware.power@1.0-service
-vendor/etc/init/android.hardware.power@1.0-service.rc
-vendor/lib/hw/android.hardware.power@1.0-impl.so
-vendor/lib/hw/power.default.so
 vendor/lib/hw/power.qcom.so
-vendor/lib64/hw/android.hardware.power@1.0-impl.so
-vendor/lib64/hw/power.default.so
 vendor/lib64/hw/power.qcom.so
 
 # QMI
@@ -1627,7 +1669,6 @@ vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
-
 # SSR
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
@@ -1638,6 +1679,7 @@ vendor/lib64/libsubsystem_control.so
 # Samsung
 lib/libhumantracking_util.camera.samsung.so:vendor/lib/libhumantracking_util.camera.samsung.so
 lib/libsmart_cropping.camera.samsung.so:vendor/lib/libsmart_cropping.camera.samsung.so
+lib/vendor.samsung.hardware.camera.provider@4.0.so:vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
 lib/vendor.samsung.hardware.wifi.hostapd@3.0.so:vendor/lib/vendor.samsung.hardware.wifi.hostapd@3.0.so
 lib/vendor.samsung.hardware.wifi@2.0.so:vendor/lib/vendor.samsung.hardware.wifi@2.0.so
 lib64/libhumantracking_util.camera.samsung.so:vendor/lib64/libhumantracking_util.camera.samsung.so
@@ -1647,27 +1689,24 @@ lib64/vendor.samsung.hardware.wifi@2.0.so:vendor/lib64/vendor.samsung.hardware.w
 vendor/bin/hw/android.hardware.health@2.1-service-samsung
 vendor/bin/hw/vendor.samsung.hardware.light-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
-vendor/bin/hw/vendor.samsung.hardware.vibrator@2.2-service
 vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
 vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.vibrator@2.2-service.rc
 -vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib/libOpenCv.camera.samsung.so
+vendor/lib/vendor.samsung.hardware.health@2.0.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/libOpenCv.camera.samsung.so
+vendor/lib64/vendor.samsung.hardware.health@2.0.so
 vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so
-vendor/lib64/vendor.samsung.hardware.vibrator@2.0.so
-vendor/lib64/vendor.samsung.hardware.vibrator@2.1.so
-vendor/lib64/vendor.samsung.hardware.vibrator@2.2.so
 vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
 vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
 vendor/lib64/vendor.samsung.hardware.wifi@2.1.so
@@ -1684,17 +1723,21 @@ vendor/etc/sensors/sensor_def_qcomdev.conf
 # Sensors
 vendor/bin/sensors.qti
 vendor/lib/hw/activity_recognition.msm8937.so
+vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.rp.so
 vendor/lib/sensors.ssc.so
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/hw/activity_recognition.msm8937.so
+vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.rp.so
 vendor/lib64/sensors.ssc.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Soter
 system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
@@ -1757,8 +1800,11 @@ vendor/lib64/libUBWC.so
 vendor/lib64/libstreamparser.so
 
 # Vibrator
-vendor/lib/hw/vibrator.default.so
-vendor/lib64/hw/vibrator.default.so
+vendor/bin/hw/vendor.samsung.hardware.vibrator@2.2-service
+vendor/etc/init/vendor.samsung.hardware.vibrator@2.2-service.rc
+vendor/lib64/vendor.samsung.hardware.vibrator@2.0.so
+vendor/lib64/vendor.samsung.hardware.vibrator@2.1.so
+vendor/lib64/vendor.samsung.hardware.vibrator@2.2.so
 
 # Voice
 vendor/lib/vendor.qti.voiceprint@1.0.so
