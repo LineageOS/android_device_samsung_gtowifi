@@ -1170,6 +1170,7 @@ vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
+vendor/lib/libbatching.so
 vendor/lib/libdataitems.so
 vendor/lib/libgdtap.so
 vendor/lib/libgeofencing.so
@@ -1196,6 +1197,7 @@ vendor/lib/vendor.qti.gnss@4.0.so
 vendor/lib/vendor.samsung.hardware.gnss@2.0.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
+vendor/lib64/libbatching.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libgeofencing.so
@@ -1579,6 +1581,7 @@ vendor/bin/rmt_storage
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
+vendor/etc/seccomp_policy/atfwd@2.0.policy
 vendor/lib/libconfigdb.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/liblqe.so
@@ -1817,6 +1820,8 @@ vendor/lib64/libhdcpsrm.so
 # WiFi
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
+vendor/lib/libcld80211.so
+vendor/lib64/libcld80211.so
 
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so

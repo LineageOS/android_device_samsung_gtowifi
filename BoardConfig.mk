@@ -150,7 +150,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-05-01
+VENDOR_SECURITY_PATCH := 2022-07-01
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk

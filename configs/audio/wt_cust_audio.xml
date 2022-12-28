@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- there is used for wt mmi loopback  test -->
+
+<mixer>
+    <!-- mainmic-->
+    <path name="mainmic">
+        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="DEC1 MUX" value="ADC1" />
+        <ctl name="ADC1_INP1 Switch" value="1" />
+    </path>
+    <!-- mainmic2-->
+    <path name="mainmic2">
+        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="DEC1 MUX" value="ADC1" />
+        <ctl name="ADC1_INP1 Switch" value="1" />
+    </path>
+
+    <!-- submic-->
+    <path name="submic">
+        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="DEC1 MUX" value="ADC2" />
+        <ctl name="ADC2 MUX" value="INP3" />
+    </path>
+
+    <!-- submic2-->
+    <path name="submic2">
+        <ctl name="ADC3 Volume" value="6" />
+        <ctl name="DEC1 MUX" value="ADC2" />
+        <ctl name="ADC2 MUX" value="INP3" />
+    </path>
+
+    <!-- headset-mic-->
+    <path name="headset-mic">
+        <ctl name="ADC2 Volume" value="6" />
+        <ctl name="DEC1 MUX" value="ADC2" />
+        <ctl name="ADC2 MUX" value="INP2" />
+    </path>
+
+    <!-- headphone-->
+    <path name="headphone">
+        <ctl name="MI2S_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RX2 MIX1 INP1" value="RX2" />
+        <ctl name="RDAC2 MUX" value="RX2" />
+        <ctl name="HPHL" value="Switch" />
+        <ctl name="HPHR" value="Switch" />
+        <ctl name="headset amp" value="ENABLE" />
+    </path>
+
+    <!--speaker -->
+    <path name="speaker">
+        <ctl name="MI2S_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RX2 MIX1 INP1" value="RX2" />
+        <ctl name="RDAC2 MUX" value="RX2" />
+        <ctl name="HPHL" value="Switch" />
+        <ctl name="HPHR" value="Switch" />
+        <ctl name="Ext Left Spk Switch" value="On" />
+        <ctl name="Ext Right Spk Switch" value="On" />
+    </path>
+
+    <!--speaker right -->
+    <path name="speaker-right">
+        <ctl name="MI2S_RX Channels" value="One" />
+        <ctl name="RX2 MIX1 INP1" value="RX2" />
+        <ctl name="RDAC2 MUX" value="RX2" />
+        <ctl name="HPHR" value="Switch" />
+        <ctl name="Ext Right Spk Switch" value="On" />
+    </path>
+
+    <!-- speakerleft -->
+    <path name="speaker-left">
+        <ctl name="MI2S_RX Channels" value="One" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="HPHL" value="Switch" />
+        <ctl name="Ext Left Spk Switch" value="On" />
+    </path>
+    <!-- reciver -->
+    <path name="reciver">
+          <ctl name="RX1 MIX1 INP1" value="RX1" />
+          <ctl name="RDAC2 MUX" value="RX1" />
+          <ctl name="RX1 Digital Volume" value="86" />
+          <ctl name="EAR PA Gain" value="POS_6_DB" />
+          <ctl name="EAR_S" value="Switch" />
+    </path>
+
+    <!--loopback test -->
+    <!-- mainmic to headphone -->
+    <path name="mmi-loopback-mainmic-headphone">
+          <path name="mainmic" />
+          <path name="headphone" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- mainmic2 to headphone -->
+    <path name="mmi-loopback-mainmic2-headphone">
+          <path name="mainmic2" />
+          <path name="headphone" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- second to headphone -->
+    <path name="mmi-loopback-second-headphone">
+         <path name="submic" />
+         <path name="headphone" />
+         <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- second2 to headphone -->
+    <path name="mmi-loopback-second2-headphone">
+          <path name="submic2" />
+          <path name="headphone" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- headset-mic to speaker -->
+    <path name="mmi-loopback-hsmic-speaker">
+          <path name="headset-mic" />
+          <path name="speaker" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- headset-mic to speakerright -->
+    <path name="mmi-loopback-hsmic-spkr">
+          <path name="headset-mic" />
+          <path name="speaker-right" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- headset-mic to speakerleft -->
+    <path name="mmi-loopback-hsmic-spkl">
+          <path name="headset-mic" />
+          <path name="speaker-left" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- headset-mic to receiver -->
+    <path name="mmi-loopback-hsmic-receiver">
+          <path name="headset-mic" />
+          <path name="reciver" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- headset-mic to headphone -->
+    <path name="mmi-loopback-hsmic-headphone">
+          <path name="headset-mic" />
+          <path name="headphone" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- main-mic to speaker -->
+    <path name="mmi-loopback-mainmic-spkr">
+          <path name="mainmic" />
+          <path name="speaker" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+        <!-- main-mic2 to speaker -->
+    <path name="mmi-loopback-mainmic2-spkr">
+          <path name="mainmic2" />
+          <path name="speaker" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- main-mic to receiver -->
+    <path name="mmi-loopback-mainmic-rec">
+          <path name="mainmic" />
+          <path name="reciver" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- main-mic2 to receiver -->
+    <path name="mmi-loopback-mainmic2-rec">
+          <path name="mainmic2" />
+          <path name="reciver" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+        <!-- sub-mic to speaker -->
+    <path name="mmi-loopback-submic-spkr">
+          <path name="submic" />
+          <path name="speaker" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+    <!-- sub-mic to receiver -->
+    <path name="mmi-loopback-submic-rec">
+          <path name="submic" />
+          <path name="reciver" />
+          <ctl name="RX1 Digital Volume" value="70" />
+          <ctl name="PRI_MI2S_RX Port Mixer TERT_MI2S_TX" value="1"/>
+    </path>
+
+</mixer>
