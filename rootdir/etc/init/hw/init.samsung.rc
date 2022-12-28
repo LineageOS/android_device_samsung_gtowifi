@@ -37,14 +37,6 @@ on init
 
     # Google FRP
     symlink /dev/block/platform/soc/7824900.sdhci/by-name/persistent /dev/block/persistent
-	
-on fs 
-    wait /dev/block/bootdevice/by-name/efs
-    mount ext4 /dev/block/bootdevice/by-name/efs /mnt/vendor/efs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
-	
-	wait /dev/block/bootdevice/by-name/sec_efs
-    mount ext4 /dev/block/bootdevice/by-name/sec_efs /efs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
-    restorecon -R /efs
 
 on post-fs
     restorecon_recursive /mnt/vendor/efs
