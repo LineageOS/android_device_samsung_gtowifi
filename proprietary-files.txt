@@ -3,28 +3,11 @@
 
 # ADSP
 vendor/bin/adsprpcd
+vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-
-# ADSP-Modules
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
 # ANT
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
@@ -106,20 +89,20 @@ vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 
 # Bluetooth
+app/FmTest/lib/arm64/libbtconfigstore.so:vendor/lib64/libbtconfigstore.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbluetooth_audio_session.so
+vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
 vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
@@ -127,18 +110,16 @@ vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so
-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session.so
+vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
@@ -146,14 +127,17 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 
 # Bluetooth-AptX
 lib64/libaptX_encoder.so
 
-# CDSP
-vendor/lib/libcdsprpc.so
-vendor/lib64/libcdsprpc.so
+# Configstore
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 
 # CNE
 system_ext/framework/com.quicinc.cne.api-V1.0-java.jar
@@ -1071,6 +1055,29 @@ vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libwvhidl.so
 
+# DSP
+vendor/bin/dspservice
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
+vendor/lib/libcdsp_default_listener.so
+vendor/lib/libcdsprpc.so
+vendor/lib/libfastcvadsp_stub.so
+vendor/lib/libfastcvopt.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libfastcvadsp_stub.so
+vendor/lib64/libfastcvopt.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
+
 # Display-Hardware
 vendor/lib/hw/gralloc.msm8937.so
 vendor/lib/hw/hwcomposer.msm8937.so
@@ -1128,8 +1135,8 @@ vendor/etc/dolby/dax-default.xml
 vendor/etc/media_codecs_dolby_audio.xml
 
 # FM
-app/FmTest/lib/arm64/fm_helium.so:system_ext/lib64/fm_helium.so
-app/FmTest/lib/arm64/libfm-hci.so:system_ext/lib64/libfm-hci.so
+app/FmTest/lib/arm64/fm_helium.so:vendor/lib64/fm_helium.so
+app/FmTest/lib/arm64/libfm-hci.so:vendor/lib64/libfm-hci.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
@@ -1584,8 +1591,6 @@ vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
-etc/permissions/privapp-permissions-qti.xml
-etc/sysconfig/qti_whitelist.xml
 system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/framework/embmslibrary.jar
@@ -1616,6 +1621,7 @@ vendor/lib/libpdnotifier.so
 vendor/lib/libqcmaputils.so
 vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
+vendor/lib/librmnetctl.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so
@@ -1644,6 +1650,7 @@ vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
+vendor/lib64/librmnetctl.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
