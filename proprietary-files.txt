@@ -1683,19 +1683,14 @@ vendor/lib64/libsubsystem_control.so
 lib/libhumantracking_util.camera.samsung.so:vendor/lib/libhumantracking_util.camera.samsung.so
 lib/libsmart_cropping.camera.samsung.so:vendor/lib/libsmart_cropping.camera.samsung.so
 lib/vendor.samsung.hardware.camera.provider@4.0.so:vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
-lib/vendor.samsung.hardware.wifi.hostapd@3.0.so:vendor/lib/vendor.samsung.hardware.wifi.hostapd@3.0.so
-lib/vendor.samsung.hardware.wifi@2.0.so:vendor/lib/vendor.samsung.hardware.wifi@2.0.so
 lib64/libhumantracking_util.camera.samsung.so:vendor/lib64/libhumantracking_util.camera.samsung.so
 lib64/libsmart_cropping.camera.samsung.so:vendor/lib64/libsmart_cropping.camera.samsung.so
-lib64/vendor.samsung.hardware.wifi.hostapd@3.0.so:vendor/lib64/vendor.samsung.hardware.wifi.hostapd@3.0.so
-lib64/vendor.samsung.hardware.wifi@2.0.so:vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
 vendor/bin/hw/android.hardware.health@2.1-service-samsung
 vendor/bin/hw/vendor.samsung.hardware.light-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
 vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
 vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
 -vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
--vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/vendor.samsung.hardware.health@2.0.so
@@ -1710,9 +1705,6 @@ vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.1.so
 
 # Seccam
 system_ext/lib/libseccam.so
