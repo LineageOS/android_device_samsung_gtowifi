@@ -1897,10 +1897,7 @@ vendor/etc/mmigroup/factoryInterfaceConfig.json
 vendor/etc/mmigroup/rec.wav
 vendor/etc/mmigroup/spk.wav
 vendor/etc/ftm_test_config_wcd9335
-vendor/etc/playback_record_audio_policy_configuration.xml
-vendor/etc/public.libraries.txt.backup
 vendor/etc/somxreg.conf
-vendor/etc/wt_cust_audio.xml
 vendor/lib/soundfx/libgearvr.so
 vendor/lib/soundfx/libplaybackrecorder.so
 vendor/lib/soundfx/libswdap.so
