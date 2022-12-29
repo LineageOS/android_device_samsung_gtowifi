@@ -1812,10 +1812,12 @@ vendor/lib/libhdcpsrm.so
 vendor/lib64/libhdcpsrm.so
 
 # WiFi
+vendor/bin/hw/macloader
+vendor/bin/hw/mfgloader
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
-vendor/lib/libcld80211.so
-vendor/lib64/libcld80211.so
+vendor/etc/init/wifi.rc:vendor/etc/init/wifi_sec.rc
+vendor/etc/init/wifi_qcom.rc
 
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
@@ -1842,8 +1844,6 @@ lib64/libwcnftms.so:vendor/lib64/libwcnftms.so
 -vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
 -vendor/app/SSGTelemetryService/SSGTelemetryService.apk
 vendor/bin/hw/interfaces.factoryInterface@1.0-service
-vendor/bin/hw/macloader
-vendor/bin/hw/mfgloader
 vendor/bin/KmInstallKeybox
 vendor/bin/PktRspTest
 vendor/bin/cplay
@@ -1875,7 +1875,6 @@ vendor/bin/wtseecom_query_client
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
 vendor/etc/init/factorybsp_service.rc
-vendor/etc/init/wifi.rc
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/mmigroup/CommonParam.json
 vendor/etc/mmigroup/MMIGroupADBCmdTest.json
@@ -1901,7 +1900,6 @@ vendor/etc/ftm_test_config_wcd9335
 vendor/etc/playback_record_audio_policy_configuration.xml
 vendor/etc/public.libraries.txt.backup
 vendor/etc/somxreg.conf
-vendor/etc/wlan_common_rc
 vendor/etc/wt_cust_audio.xml
 vendor/lib/soundfx/libgearvr.so
 vendor/lib/soundfx/libplaybackrecorder.so
@@ -1944,7 +1942,6 @@ vendor/lib/libsomxvc1dsw.so
 vendor/lib/libsomxvp8d.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_omx_vendor.so
-vendor/lib/libwifi-hal.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/interfaces.customNvService@1.0.so
 vendor/lib64/interfaces.factoryAta@1.0.so
