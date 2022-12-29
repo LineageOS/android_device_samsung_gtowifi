@@ -1816,8 +1816,12 @@ vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
-vendor/etc/init/wifi.rc:vendor/etc/init/wifi_sec.rc
+vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
+vendor/etc/wlan_common_rc
+vendor/lib/libcld80211.so
+vendor/lib/libwifi-hal.so
+vendor/lib64/libcld80211.so
 
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
