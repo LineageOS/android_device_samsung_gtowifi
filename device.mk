@@ -11,6 +11,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.effect@6.0-service \
+    audio.r_submix.default \
+    audio.usb.default \
     libtinycompress
 
 PRODUCT_COPY_FILES += \
