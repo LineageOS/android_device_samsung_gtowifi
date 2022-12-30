@@ -1,45 +1,7 @@
-debug.stagefright.omx_default_rank=0
-vendor.vidc.disable.split.mode=1
-ro.control_privapp_permissions=enforce
-dalvik.vm.heapminfree=4m
-dalvik.vm.heapstartsize=16m
-dalvik.vm.heapgrowthlimit=192m
-dalvik.vm.heapsize=512m
-dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.heapmaxfree=8m
-vendor.display.disable_ext_anim=1
-ro.hardware.nfc_nci=nqx.default
-ro.hardware.keystore_desede=true
-persist.vendor.qcomsysd.enabled=1
-keyguard.no_require_sim=true
-security.ASKS.policy_version=00000000
-security.ASKS.version=0
-security.ASKS.time_value=00000000
-security.ASKS.rufs_enable=true
-security.ADP.version=0
-security.ADP.policy_version=00000000
-sys.config.activelaunch_enable=true
-ro.smps.enable=false
-security.securehw.available=false
-security.securenvm.available=false
+# APEX
 ro.apex.updatable=false
-sys.config.hardcoder.enable=false
-sys.config.ibs.enable=false
-dalvik.vm.lockprof.threshold=500
-persist.vendor.radio.atfwd.start=false
-ro.security.cass.feature=1
-ro.security.vpnpp.ver=2.2
-ro.security.vpnpp.release=1.0
-ro.vendor.extension_library=libqti-perfd-client.so
-persist.vendor.radio.apm_sim_not_pwdn=1
-persist.vendor.radio.sib16_support=1
-persist.vendor.radio.custom_ecc=1
-persist.vendor.radio.rat_on=combine
-persist.backup.ntpServer=0.pool.ntp.org
-sys.vendor.shutdown.waittime=500
-persist.vendor.radio.procedure_bytes=SKIP
-ro.vendor.qti.config.swap=1
-af.fast_track_multiplier=1
+
+# Audio
 vendor.audio_hal.period_size=192
 ro.vendor.audio.sdk.fluencetype=none
 persist.vendor.audio.fluence.voicecall=false
@@ -64,20 +26,13 @@ vendor.audio.parser.ip.buffer.size=262144
 vendor.audio.playback.mch.downsample=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
-vendor.voice.playback.conc.disabled=true
-vendor.voice.record.conc.disabled=false
-vendor.voice.voip.conc.disabled=true
-vendor.voice.conc.fallbackpath=deep-buffer
 persist.vendor.audio.speaker.prot.enable=false
 vendor.audio.hw.aac.encoder=true
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
-ro.af.client_heap_size_kbyte=7168
 persist.vendor.audio.hw.binder.size_kbyte=1024
-persist.vendor.bt.enable.splita2dp=false
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio.spkr_prot.tx.sampling_rate=48000
-vendor.audio.feature.a2dp_offload.enable=false
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
 vendor.audio.feature.battery_listener.enable=false
@@ -119,27 +74,56 @@ vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=true
 vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=true
-rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
-vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
-vendor.display.disable_skip_validate=1
-persist.vendor.radio.enableadvancedscan=false
-ro.wt_final_release=1
-ro.hardware.vulkan=adreno
-ro.hardware.egl=adreno
+
+# Bluetooth
+persist.vendor.bt.enable.splita2dp=false
 persist.vendor.qcom.bluetooth.soc=pronto
 persist.vendor.qcom.bluetooth.enable.splita2dp=false
 ro.vendor.bluetooth.wipower=false
-ro.telephony.iwlan_operation_mode=legacy
+vendor.audio.feature.a2dp_offload.enable=false
+
+# Dalvik
+dalvik.vm.heapminfree=4m
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapgrowthlimit=192m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapmaxfree=8m
+
+# Display
+vendor.display.disable_ext_anim=1
+vendor.display.disable_skip_validate=1
+
+# FRP
 ro.frp.pst=/dev/block/persistent
-ro.build.scafe.version=2020A
+
+# Graphics
+ro.hardware.vulkan=adreno
+ro.hardware.egl=adreno
 ro.sf.lcd_density=213
-ro.config.vc_call_vol_steps=6
-ro.config.ringtone=Over_the_Horizon.ogg
-ro.config.notification_sound=Spaceline.ogg
-ro.config.alarm_alert=Homecoming.ogg
-ro.config.media_sound=Media_preview_Touch_the_light.ogg
-ro.config.ringtone_2=Atomic_Bell.ogg
-ro.config.notification_sound_2=Signal.ogg
+
+# GPS
+persist.backup.ntpServer=0.pool.ntp.org
+
+# Media
+debug.stagefright.omx_default_rank=0
+
+# Qualcomm System Daemon
+persist.vendor.qcomsysd.enabled=1
+
+# Radio
+persist.vendor.radio.atfwd.start=false
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.sib16_support=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.rat_on=combine
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.enableadvancedscan=false
+ro.telephony.iwlan_operation_mode=legacy
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+
+# Samsung Low Memory Killer
 ro.slmk.dha_lmk_scale=0.2425
 ro.slmk.dha_pwhl_key=8
 ro.slmk.dha_dialer_except_th=2048
@@ -164,6 +148,45 @@ ro.slmk.plg_key=73
 ro.slmk.provider_upgrade_adj=true
 ro.slmk.use_lowmem_keep_except=true
 ro.slmk.enable_reentry_lmk=true
+
+# Security
+ro.hardware.keystore_desede=true
+keyguard.no_require_sim=true
+security.ASKS.policy_version=00000000
+security.ASKS.version=0
+security.ASKS.time_value=00000000
+security.ASKS.rufs_enable=true
+security.ADP.version=0
+security.ADP.policy_version=00000000
+security.securehw.available=false
+security.securenvm.available=false
+
+# Shutdown
+sys.vendor.shutdown.waittime=500
+
+# Misc
+vendor.vidc.disable.split.mode=1
+ro.control_privapp_permissions=enforce
+ro.hardware.nfc_nci=nqx.default
+sys.config.activelaunch_enable=true
+ro.smps.enable=false
+sys.config.hardcoder.enable=false
+sys.config.ibs.enable=false
+dalvik.vm.lockprof.threshold=500
+ro.security.cass.feature=1
+ro.security.vpnpp.ver=2.2
+ro.security.vpnpp.release=1.0
+ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.qti.config.swap=1
+af.fast_track_multiplier=1
+vendor.voice.playback.conc.disabled=true
+vendor.voice.record.conc.disabled=false
+vendor.voice.voip.conc.disabled=true
+vendor.voice.conc.fallbackpath=deep-buffer
+ro.af.client_heap_size_kbyte=7168
+ro.wt_final_release=1
+ro.build.scafe.version=2020A
+ro.config.vc_call_vol_steps=6
 ro.config.pageboost.vramdisk.bootfile.enabled=true
 ro.config.pageboost.io_prefetch.enabled=true
 ro.config.pageboost.io_prefetch.level=3
@@ -172,4 +195,3 @@ ro.config.pageboost.active_launch.timeout=70
 ro.config.pageboost.vramdisk.without_predict=true
 persist.sys.kpm_onoff=false
 persist.sys.hardcoder.name=SecHardCoder
-
