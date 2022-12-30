@@ -525,14 +525,4 @@
         </interface>
         <fqname>@2.2::ISehVibrator/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.wifi.supplicant</name>
-        <transport>hwbinder</transport>
-        <version>3.0</version>
-        <interface>
-            <name>ISehSupplicant</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@3.0::ISehSupplicant/default</fqname>
-    </hal>
 </manifest>
