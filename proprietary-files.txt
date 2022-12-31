@@ -1333,6 +1333,8 @@ vendor/lib64/vendor.qti.latency@2.0.so
 
 # Lights
 vendor/bin/hw/vendor.samsung.hardware.light-service
+vendor/etc/init/lights-default-sec.rc
+-vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
 
 # Listen
