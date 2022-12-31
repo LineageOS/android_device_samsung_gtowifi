@@ -1803,7 +1803,6 @@ vendor/bin/cnss_diag
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
-vendor/etc/wlan_common_rc
 vendor/lib/libwifi-hal-ctrl.so
 vendor/lib/libwifi-hal-qcom.so
 vendor/lib/libwifi-hal.so
