@@ -1794,14 +1794,11 @@ lib/vendor.samsung.hardware.wifi.hostapd@3.0.so:vendor/lib/vendor.samsung.hardwa
 lib/vendor.samsung.hardware.wifi@2.0.so:vendor/lib/vendor.samsung.hardware.wifi@2.0.so
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
-#vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
-#vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
-#-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 vendor/etc/wlan_common_rc
 vendor/lib/libwifi-hal-ctrl.so
 vendor/lib/libwifi-hal-qcom.so
