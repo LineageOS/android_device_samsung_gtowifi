@@ -1795,8 +1795,6 @@ vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
-vendor/lib/libwifi-hal.so
-vendor/lib64/libwifi-hal.so
 
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
