@@ -1794,25 +1794,14 @@ vendor/lib/libhdcpsrm.so
 vendor/lib64/libhdcpsrm.so
 
 # WiFi
-lib/vendor.samsung.hardware.wifi.hostapd@3.0.so:vendor/lib/vendor.samsung.hardware.wifi.hostapd@3.0.so
-lib/vendor.samsung.hardware.wifi@2.0.so:vendor/lib/vendor.samsung.hardware.wifi@2.0.so
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
--vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
-vendor/lib/libwifi-hal-ctrl.so
-vendor/lib/libwifi-hal-qcom.so
 vendor/lib/libwifi-hal.so
-vendor/lib64/libwifi-hal-ctrl.so
-vendor/lib64/libwifi-hal-qcom.so
 vendor/lib64/libwifi-hal.so
-vendor/lib64/vendor.samsung.hardware.wifi.hostapd@3.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.1.so
 
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
