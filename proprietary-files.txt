@@ -1195,7 +1195,6 @@ vendor/lib/liblocationservice_glue.so
 vendor/lib/liblowi_client.so
 vendor/lib/liblowi_wifihal.so
 vendor/lib/libpdmapper.so
-vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libsemnativecarrierfeature.so
 vendor/lib/libsynergy_loc_api.so
 vendor/lib/libxtadapter.so
@@ -1234,7 +1233,6 @@ vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libqcc_file_agent.so
-vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libxtadapter.so

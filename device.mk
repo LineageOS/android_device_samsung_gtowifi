@@ -82,6 +82,10 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
+# fwk-detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
