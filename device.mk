@@ -210,6 +210,7 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
+    libjson \
     librmnetctl
 
 # Ramdisk
