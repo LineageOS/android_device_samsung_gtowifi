@@ -1,0 +1,4 @@
+vendor.samsung.hardware.gnss::ISehGnss				u:object_r:hal_gnss_hwservice:s0
+vendor.samsung.hardware.health::ISehHealth			u:object_r:hal_health_hwservice:s0
+vendor.samsung.hardware.miscpower::ISehMiscPower	u:object_r:hal_miscpower_hwservice:s0
+vendor.samsung.hardware.vibrator::ISehVibrator		u:object_r:hal_vibrator_hwservice:s0

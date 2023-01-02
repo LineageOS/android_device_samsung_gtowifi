@@ -1,0 +1,4 @@
+allow vendor_init watchdog_device:file create_file_perms;
+allow vendor_init ipa_dev:file create_file_perms;
+
+get_prop(vendor_init, persist_debug_prop)

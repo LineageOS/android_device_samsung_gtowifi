@@ -1,0 +1,5 @@
+r_dir_file(hal_bluetooth_qti, vendor_convergence_data_file)
+
+allow hal_bluetooth_qti efs_file:dir search;
+
+set_prop(hal_bluetooth_qti, vendor_bluetooth_prop)

@@ -1,0 +1,3 @@
+add_hwservice(hal_power_default, hal_miscpower_hwservice);
+
+allow hal_power_default sysfs_battery_supply:dir search;
