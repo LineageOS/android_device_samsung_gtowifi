@@ -93,6 +93,7 @@ dalvik.vm.heapmaxfree=8m
 # Display
 vendor.display.disable_ext_anim=1
 vendor.display.disable_skip_validate=1
+qemu.hw.mainkeys=0
 
 # FRP
 ro.frp.pst=/dev/block/persistent
