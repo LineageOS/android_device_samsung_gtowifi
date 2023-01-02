@@ -241,7 +241,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.samsung.bsp.rc \
-    init.samsung.rc \
     init.target.rc \
     init.time_daemon.rc \
     init.vendor.sysfw.rc \

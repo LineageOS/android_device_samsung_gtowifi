@@ -28,7 +28,7 @@
 #
 
 import init.carrier.rc
-import /vendor/etc/init/hw/init.samsung.rc
+import /vendor/etc/init/hw/init.samsung.bsp.rc
 import /vendor/etc/init/hw/init.${ro.product.device}.rc
 import /vendor/etc/init/hw/init.${ro.product.name}.rc
 
