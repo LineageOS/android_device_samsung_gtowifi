@@ -243,7 +243,6 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.target.rc \
     init.time_daemon.rc \
-    init.vendor.rilcommon.rc \
     init.vendor.sysfw.rc \
     init-qcril-data.rc \
     init_thermal-engine.rc \
