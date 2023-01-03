@@ -1018,7 +1018,10 @@ system_ext/framework/com.qti.dpmframework.jar
 system_ext/framework/dpmapi.jar
 
 # DRM
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/libGPQTEEC_vendor.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libGPreqcancel.so
@@ -1038,6 +1041,8 @@ vendor/lib/libsecureui.so
 vendor/lib/libsecureui_svcsock.so
 vendor/lib/libssd.so
 vendor/lib/libtzdrmgenprov.so
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libGPreqcancel.so
@@ -1056,13 +1061,17 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 # DRM-Widevine
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
+vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libwvhidl.so
+vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # DSP
 vendor/bin/dspservice
@@ -1356,7 +1365,6 @@ vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
