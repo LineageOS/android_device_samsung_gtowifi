@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.a2dp@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
 
@@ -74,6 +75,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.3-service.clearkey
 
 # FM
@@ -85,6 +87,10 @@ PRODUCT_PACKAGES += \
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -102,6 +108,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     vendor.display.config@2.0.vendor
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1.vendor
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
@@ -118,6 +128,10 @@ PRODUCT_COPY_FILES += \
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
@@ -194,6 +208,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
+    android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
 # Properties
@@ -273,6 +288,10 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.2-service-qti
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.3.vendor
 
 # WiFi
 PRODUCT_PACKAGES += \
