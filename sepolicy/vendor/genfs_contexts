@@ -1,6 +1,5 @@
 genfscon proc /last_kmsg	u:object_r:proc_last_kmsg:s0
 
-genfscon sysfs /class/kgsl						u:object_r:sysfs_kgsl:s0
 genfscon sysfs /class/bdi/0:60/read_ahead_kb	u:object_r:sysfs_mmc_host:s0
 genfscon sysfs /class/lcd_bias/secure_mode		u:object_r:sysfs_graphics:s0
 genfscon sysfs /class/leds/wled/secure_mode		u:object_r:sysfs_graphics:s0
