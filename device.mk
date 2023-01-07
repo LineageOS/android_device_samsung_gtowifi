@@ -78,12 +78,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.3-service.clearkey
 
-# FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
-
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
