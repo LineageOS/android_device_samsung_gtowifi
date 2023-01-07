@@ -35,7 +35,7 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioalsa.so
-vendor/lib/libaudioparsers.so
+-vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib64/soundfx/libasphere.so
@@ -50,7 +50,7 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioparsers.so
+-vendor/lib64/libaudioparsers.so
 
 # Audio-ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -79,30 +79,10 @@ vendor/etc/acdbdata/MTP_sea/MTP_sea_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP_sea/MTP_sea_workspaceFile.qwsp
 
 # Audio-Hardware
-vendor/lib/hw/audio.primary.msm8937.so
 vendor/lib/soundfx/libgearvr.so
 vendor/lib/soundfx/libplaybackrecorder.so
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib/soundfx/libqcomvisualizer.so
-vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libswdap.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libhdmiedid.so
-vendor/lib/libhfp.so
-vendor/lib/libsndmonitor.so
-vendor/lib/libspkrprot.so
-vendor/lib/libssrec.so
-vendor/lib64/hw/audio.primary.msm8937.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libswdap.so
-vendor/lib64/liba2dpoffload.so
-vendor/lib64/libhdmiedid.so
-vendor/lib64/libhfp.so
-vendor/lib64/libsndmonitor.so
-vendor/lib64/libspkrprot.so
-vendor/lib64/libssrec.so
 
 # Bluetooth
 app/FmTest/lib/arm64/libbtconfigstore.so:vendor/lib64/libbtconfigstore.so
@@ -200,7 +180,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
-vendor/lib/libswvdec.so
 vendor/lib/libvideoutils.so
 vendor/lib/libwa_widelens_undistort.so
 vendor/lib64/libOpenCv.camera.samsung.so
@@ -208,7 +187,6 @@ vendor/lib64/libbase64.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libseemore.so
-vendor/lib64/libswvdec.so
 vendor/lib64/libvideoutils.so
 
 # Camera-provider
@@ -1099,31 +1077,7 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Display-Hardware
-vendor/lib/hw/gralloc.msm8937.so
-vendor/lib/hw/hwcomposer.msm8937.so
-vendor/lib/hw/memtrack.msm8937.so
-vendor/lib/libdisplayconfig.qti.so
-vendor/lib/libdrm.so
-vendor/lib/libdrmutils.so
-vendor/lib/libgpu_tonemapper.so
-vendor/lib/libgralloc.qti.so
-vendor/lib/libgrallocutils.so
-vendor/lib/libqdMetaData.so
-vendor/lib/libqdutils.so
-vendor/lib/libqservice.so
 vendor/lib/libscalar.so
-vendor/lib64/hw/gralloc.msm8937.so
-vendor/lib64/hw/hwcomposer.msm8937.so
-vendor/lib64/hw/memtrack.msm8937.so
-vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libdrm.so
-vendor/lib64/libdrmutils.so
-vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libgralloc.qti.so
-vendor/lib64/libgrallocutils.so
-vendor/lib64/libqdMetaData.so
-vendor/lib64/libqdutils.so
-vendor/lib64/libqservice.so
 vendor/lib64/libscalar.so
 
 # Dolby
@@ -1342,16 +1296,12 @@ vendor/lib64/libpvr.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 -vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmcore.so
 vendor/lib/libsdmextension.so
-vendor/lib/libsdmutils.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 -vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/libtinyxml2_1.so
 
 # IOP
@@ -1413,26 +1363,18 @@ vendor/lib64/libmeters.so
 vendor/lib64/libreffeature.so
 
 # Media
-lib/libFileMux.so
-lib/libOmxMux.so
-lib/libmmrtpdecoder.so
-lib/libmmrtpencoder.so
-lib64/libFileMux.so
-lib64/libOmxMux.so
-lib64/libmmrtpdecoder.so
-lib64/libmmrtpencoder.so
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib/vendor.qti.hardware.vpp@1.1.so
-system_ext/lib/vendor.qti.hardware.vpp@1.2.so
-system_ext/lib64/libmmosal.so
-system_ext/lib64/libmmparser_lite.so
-system_ext/lib64/vendor.qti.hardware.vpp@1.1.so
-system_ext/lib64/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/libmulawdec.so
+vendor/lib/libstagefright_soft_ac4dec.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
+vendor/lib/libvqzip.so
+vendor/lib64/libmulawdec.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
+
+# OMX
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libFlacSwDec.so
-vendor/lib/libI420colorconvert.so
 vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
@@ -1448,20 +1390,11 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
-vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal.so
-vendor/lib/libmulawdec.so
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib/libvpplibrary.so
-vendor/lib/libvqzip.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/libswvdec.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
-vendor/lib64/libI420colorconvert.so
 vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
@@ -1475,41 +1408,8 @@ vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
-vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmmosal.so
-vendor/lib64/libmulawdec.so
-vendor/lib64/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-
-# Media-Hardware
-vendor/lib/libOmxAacEnc.so
-vendor/lib/libOmxAmrEnc.so
-vendor/lib/libOmxCore.so
-vendor/lib/libOmxEvrcEnc.so
-vendor/lib/libOmxG711Enc.so
-vendor/lib/libOmxQcelp13Enc.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVdec.so
-vendor/lib/libOmxVenc.so
-vendor/lib/libc2dcolorconvert.so
-vendor/lib/libmm-omxcore.so
-vendor/lib/libstagefrighthw.so
-vendor/lib64/libOmxAacEnc.so
-vendor/lib64/libOmxAmrEnc.so
-vendor/lib64/libOmxCore.so
-vendor/lib64/libOmxEvrcEnc.so
-vendor/lib64/libOmxG711Enc.so
-vendor/lib64/libOmxQcelp13Enc.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVdec.so
-vendor/lib64/libOmxVenc.so
-vendor/lib64/libc2dcolorconvert.so
-vendor/lib64/libmm-omxcore.so
-vendor/lib64/libstagefrighthw.so
+vendor/lib64/libswvdec.so
 
 # Pasrmanager
 vendor/lib/vendor.qti.power.pasrmanager@1.0.so
@@ -1771,6 +1671,18 @@ vendor/lib64/vendor.samsung.hardware.vibrator@2.2.so
 # Voice
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
+
+# VPP
+system_ext/lib/vendor.qti.hardware.vpp@1.1.so
+system_ext/lib/vendor.qti.hardware.vpp@1.2.so
+system_ext/lib64/vendor.qti.hardware.vpp@1.1.so
+system_ext/lib64/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/libvpplibrary.so
+vendor/lib/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/libvpplibrary.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
 # WFD
 vendor/lib/libhdcpsrm.so

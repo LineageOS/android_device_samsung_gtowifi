@@ -16,6 +16,7 @@ DEVICE_PATH := device/samsung/gtowifi
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := msm8937
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno504
+TARGET_ENFORCES_QSSI := true
 
 # Architecture
 TARGET_ARCH := arm64
