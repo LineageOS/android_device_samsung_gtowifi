@@ -76,6 +76,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
 
@@ -115,6 +116,7 @@ PRODUCT_PACKAGES += \
     memtrack.msm8937 \
     libdisplayconfig.qti \
     libgralloc.qti \
+    vendor.display.config@1.0.vendor \
     vendor.display.config@2.0.vendor
 
 # Health
