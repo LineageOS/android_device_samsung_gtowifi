@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libgralloc.qti \
     vendor.display.config@1.0.vendor \
-    vendor.display.config@2.0.vendor
+    vendor.display.config@2.0.vendor \
+    vulkan.pastel
 
 # Health
 PRODUCT_PACKAGES += \
