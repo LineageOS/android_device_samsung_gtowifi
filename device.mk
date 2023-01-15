@@ -314,7 +314,8 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.2-service-qti
+    android.hardware.usb@1.3-service-qti \
+    android.hardware.usb.gadget@1.0-service-qti
 
 # Vibrator
 PRODUCT_PACKAGES += \
