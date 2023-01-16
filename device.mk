@@ -258,13 +258,11 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.class_late.sh \
     init.class_main.sh \
     init.crda.sh \
     init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
@@ -273,9 +271,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.can.sh \
-    init.qti.charger.sh \
-    init.qti.fm.sh \
-    init.qti.manifest_sku.sh \
     init.qti.qseecomd.sh \
     qca6234-service.sh \
     init.gtowifi.rc \
