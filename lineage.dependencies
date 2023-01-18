@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_samsung_sdm429",
+    "target_path": "kernel/samsung/sdm429"
+  }
+]
