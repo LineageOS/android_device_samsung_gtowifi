@@ -77,9 +77,11 @@ vendor.audio.feature.snd_mon.enable=true
 
 # Bluetooth
 bluetooth.device.default_name=Galaxy Tab A 8.0 (2019)
+persist.bluetooth.a2dp_offload.disabled=true
 persist.vendor.bt.enable.splita2dp=false
 persist.vendor.qcom.bluetooth.soc=pronto
 persist.vendor.qcom.bluetooth.enable.splita2dp=false
+ro.bluetooth.a2dp_offload.supported=false
 ro.vendor.bluetooth.wipower=false
 vendor.audio.feature.a2dp_offload.enable=false
 
