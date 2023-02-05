@@ -83,7 +83,6 @@ vendor/lib/soundfx/libswdap.so
 vendor/lib64/soundfx/libswdap.so
 
 # Bluetooth
-app/FmTest/lib/arm64/libbtconfigstore.so:vendor/lib64/libbtconfigstore.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
@@ -95,7 +94,6 @@ vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbtnv.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
@@ -150,11 +148,6 @@ vendor/lib/vendor.qti.hardware.cvp@1.0.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Camera
-lib/libhumantracking_util.camera.samsung.so:vendor/lib/libhumantracking_util.camera.samsung.so
-lib/libsmart_cropping.camera.samsung.so:vendor/lib/libsmart_cropping.camera.samsung.so
-lib/vendor.samsung.hardware.camera.provider@4.0.so:vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
-lib64/libhumantracking_util.camera.samsung.so:vendor/lib64/libhumantracking_util.camera.samsung.so
-lib64/libsmart_cropping.camera.samsung.so:vendor/lib64/libsmart_cropping.camera.samsung.so
 vendor/lib/hw/camera.msm8937.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libbase64.so
@@ -188,15 +181,12 @@ vendor/lib64/libseemore.so
 vendor/lib64/libvideoutils.so
 
 # Camera-provider
-lib/vendor.samsung.hardware.camera.device@5.0.so:vendor/lib/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/android.hardware.camera.provider@2.4-external.so
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/android.hardware.camera.provider@2.4-external.so
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
 # Camera-actuators
 vendor/lib/libactuator_ad5816g.so
@@ -1102,8 +1092,6 @@ system_ext/framework/vendor.qti.data.factory-V2.0-java.jar
 system_ext/framework/vendor.qti.data.factory-V2.1-java.jar
 
 # Fingerprint
-lib/vendor.samsung.hardware.biometrics.face@2.0.so:vendor/lib/vendor.samsung.hardware.biometrics.face@2.0.so
-lib64/vendor.samsung.hardware.biometrics.face@2.0.so:vendor/lib64/vendor.samsung.hardware.biometrics.face@2.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
@@ -1383,6 +1371,8 @@ vendor/lib/libOmxDsdDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxSwVdec.so
+vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
@@ -1402,6 +1392,8 @@ vendor/lib64/libOmxApeDecSw.so
 vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxQcelp13Dec.so
+vendor/lib64/libOmxSwVdec.so
+vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libmmosal.so
