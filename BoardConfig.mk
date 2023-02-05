@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2021-2022 The Android Open Source Project
 # Copyright (C) 2022 SebaUbuntu's TWRP device tree generator
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -136,6 +136,8 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/samsung/sdm429
 TARGET_KERNEL_CONFIG := lineageos_gtowifi_defconfig
 TARGET_KERNEL_VERSION := 4.9
+TARGET_KERNEL_CLANG_VERSION := r416183b
+TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -145,6 +147,10 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
