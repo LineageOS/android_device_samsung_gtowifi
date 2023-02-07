@@ -331,7 +331,6 @@ PRODUCT_PACKAGES += \
     wificond \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    wcnss_service  \
     wpa_supplicant \
     wpa_supplicant.conf
 

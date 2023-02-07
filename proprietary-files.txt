@@ -1681,6 +1681,7 @@ vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
+vendor/bin/wcnss_service
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 
