@@ -27,7 +27,7 @@ source "${HELPER}"
 function blob_fixup() {
     case "${1}" in
         vendor/lib/hw/camera.msm8937.so)
-            sed -i "s/android\.hidl\.base\@1\.0\.so/libhidlbase\.so\x0\x0\x0\x0\x0\x0\x0\x0\x0\x0/g" "${2}"
+            "${PATCHELF}" --remove-needed libhidlbase.so "${2}"
             ;;
         vendor/lib*/hw/android.hardware.health@2.0-impl-2.1-samsung.so)
             "${PATCHELF}" --replace-needed libutils.so libutils-v30.so "${2}"
