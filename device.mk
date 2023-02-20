@@ -148,9 +148,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# Light shim
+# Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-V1-ndk_platform.vendor
+    android.hardware.light-service.samsung
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
@@ -308,6 +308,11 @@ PRODUCT_COPY_FILES += \
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/samsung
 
 # USB
 PRODUCT_PACKAGES += \
