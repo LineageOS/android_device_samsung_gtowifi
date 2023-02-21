@@ -1643,13 +1643,6 @@ vendor/lib/libstreamparser.so
 vendor/lib64/libUBWC.so
 vendor/lib64/libstreamparser.so
 
-# Vibrator
-vendor/bin/hw/vendor.samsung.hardware.vibrator@2.2-service
-vendor/etc/init/vendor.samsung.hardware.vibrator@2.2-service.rc
-vendor/lib64/vendor.samsung.hardware.vibrator@2.0.so
-vendor/lib64/vendor.samsung.hardware.vibrator@2.1.so
-vendor/lib64/vendor.samsung.hardware.vibrator@2.2.so
-
 # Voice
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
