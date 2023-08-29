@@ -23,6 +23,15 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function vendor_imports() {
+    cat <<EOF >>"$1"
+		"hardware/qcom-caf/msm8953",
+		"hardware/qcom-caf/wlan",
+		"vendor/qcom/opensource/dataservices",
+		"vendor/qcom/opensource/display",
+EOF
+}
+
 function lib_to_package_fixup() {
     lib_to_package_fixup_clang_rt_ubsan_standalone "$1" ||
         lib_to_package_fixup_proto_3_9_1 "$1"
