@@ -1,0 +1,1 @@
+../../../../../../hardware/interfaces/camera/provider/2.4/default/ExternalCameraProviderImpl_2_4.cpp
