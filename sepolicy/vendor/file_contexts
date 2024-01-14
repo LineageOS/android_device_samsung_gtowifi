@@ -21,6 +21,7 @@
 # Binaries
 /(vendor|system/vendor)/bin/hw/macloader					u:object_r:macloader_exec:s0
 /(vendor|system/vendor)/bin/init\.qti\.can\.sh				u:object_r:qti_init_shell_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.4-service\.gto u:object_r:hal_camera_default_exec:s0
 
 # Data
 /data/vendor/conn(/.*)?										u:object_r:vendor_convergence_data_file:s0
