@@ -65,7 +65,7 @@ cc_library_shared {
         "libcamera_metadata",
     ],
     static_libs: [
-        "android.hardware.camera.common@1.0-helper",
+        "android.hardware.camera.common@1.0-helper.gto",
     ],
     header_libs: ["libhardware_headers.gto"],
     local_include_dirs: ["include/device_v3_5_impl"],
@@ -107,7 +107,7 @@ cc_library_shared {
         "libtinyxml2",
     ],
     static_libs: [
-        "android.hardware.camera.common@1.0-helper",
+        "android.hardware.camera.common@1.0-helper.gto",
     ],
     header_libs: ["libhardware_headers.gto"],
     local_include_dirs: ["include/ext_device_v3_5_impl"],
