@@ -34,7 +34,7 @@ cc_library_shared {
         "libcamera_metadata",
     ],
     static_libs: [
-        "android.hardware.camera.common@1.0-helper",
+        "android.hardware.camera.common@1.0-helper.gto",
     ],
     header_libs: [
         "libhardware_headers.gto",
