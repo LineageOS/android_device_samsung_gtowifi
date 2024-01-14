@@ -38,7 +38,7 @@ cc_library_shared {
         "libutils",
     ],
     static_libs: [
-        "android.hardware.camera.common@1.0-helper",
+        "android.hardware.camera.common@1.0-helper.gto",
     ],
     header_libs: [
         "libhardware_headers.gto",
@@ -81,7 +81,7 @@ cc_library_shared {
         "libutils",
     ],
     static_libs: [
-        "android.hardware.camera.common@1.0-helper",
+        "android.hardware.camera.common@1.0-helper.gto",
     ],
     header_libs: [
         "libhardware_headers.gto",
@@ -137,7 +137,7 @@ cc_library_shared {
         "camera.device@3.5-impl_headers.gto",
     ],
     static_libs: [
-        "android.hardware.camera.common@1.0-helper",
+        "android.hardware.camera.common@1.0-helper.gto",
     ],
     export_include_dirs: ["."],
 }
@@ -170,7 +170,7 @@ cc_defaults {
         "libutils",
     ],
     static_libs: [
-        "android.hardware.camera.common@1.0-helper",
+        "android.hardware.camera.common@1.0-helper.gto",
     ],
     header_libs: [
         "libhardware_headers.gto",
