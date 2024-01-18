@@ -12,20 +12,15 @@ vendor/lib64/libadsprpc.so
 # ANT
 system_ext/lib/com.qualcomm.qti.ant@1.0.so
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/bin/audioflacapp
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libaudioeffectoffload.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -37,10 +32,11 @@ vendor/lib/libaudioalsa.so
 -vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudioeffectoffload.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcvirt.so
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libaudioeffectoffload.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -49,6 +45,10 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 -vendor/lib64/libaudioparsers.so
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libaudioeffectoffload.so
+vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libqcvirt.so
 
 # Audio-ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -1042,26 +1042,26 @@ vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libwvhidl.so
+vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
@@ -1103,7 +1103,6 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
-etc/firmware/wlan/prima/WCNSS_cfg.dat
 etc/firmware/AbovCapSense.BIN
 etc/firmware/aw87319l_rcv.bin
 etc/firmware/aw87319l_spk.bin
@@ -1112,7 +1111,7 @@ etc/firmware/aw87319r_rcv.bin
 etc/firmware/aw87319r_spk.bin
 etc/firmware/aw87319r_vspk.bin
 etc/firmware/ice40.bin
-vendor/firmware/wlan/prima/WCNSS_cfg.dat
+etc/firmware/wlan/prima/WCNSS_cfg.dat
 vendor/firmware/a300_pfp.fw
 vendor/firmware/a300_pm4.fw
 vendor/firmware/a330_pfp.fw
@@ -1133,6 +1132,7 @@ vendor/firmware/a530v3_seq.fw2
 vendor/firmware/a540_gpmu.fw2
 vendor/firmware/dbmd8_va_asrp_fw.bin
 vendor/firmware/dbmd8_va_fw.bin
+vendor/firmware/wlan/prima/WCNSS_cfg.dat
 
 # GPS
 system_ext/etc/permissions/izat.xt.srv.xml
@@ -1145,15 +1145,15 @@ vendor/bin/ssgqmigd
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/cacert_location.pem
 vendor/etc/flp.conf
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gps.conf
+vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
+-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
@@ -1593,8 +1593,8 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
 system_ext/lib/vendor.qti.hardware.soter@1.0.so
 system_ext/lib64/vendor.qti.hardware.soter@1.0.so
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/SoterProvisioningTool
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -1671,10 +1671,10 @@ vendor/lib/libhdcpsrm.so
 vendor/lib64/libhdcpsrm.so
 
 # WiFi
-vendor/bin/hw/macloader
-vendor/bin/hw/mfgloader
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
+vendor/bin/hw/macloader
+vendor/bin/hw/mfgloader
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 
