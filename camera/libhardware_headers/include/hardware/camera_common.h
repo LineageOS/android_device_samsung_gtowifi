@@ -931,6 +931,22 @@ typedef struct camera_module {
      */
     int (*get_camera_info)(int camera_id, struct camera_info *info);
 
+    // SAMSUNG GTO CHANGES START
+    /**
+     * get_cam_pos:
+     * 
+     * Unknown. Needed by prebuilt camera module from the Samsung GTO device.
+     * 
+     * Return values found so far:
+     * 
+     * 0:           On a successful operation
+     *
+     * -EINVAL:     The input arguments are invalid
+     * 
+     */
+    int (*get_cam_pos)(void);
+    // SAMSUNG GTO CHANGES END
+
     /**
      * set_callbacks:
      *
