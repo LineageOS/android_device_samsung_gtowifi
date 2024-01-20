@@ -137,59 +137,13 @@ ro.telephony.iwlan_operation_mode=legacy
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
-# Samsung Low Memory Killer
-ro.slmk.dha_lmk_scale=0.2425
-ro.slmk.dha_pwhl_key=8
-ro.slmk.dha_dialer_except_th=2048
-ro.slmk.dha_cached_min=2
-ro.slmk.dha_cached_max=6
-ro.slmk.2nd.dha_cached_max=10
-ro.slmk.dha_empty_min=4
-ro.slmk.dha_empty_init=16
-ro.slmk.dha_empty_max=16
-ro.slmk.2nd.dha_empty_max=24
-ro.slmk.add_bonusEFK=2
-ro.slmk.v_bonusEFK=23552
-ro.slmk.dha_2ndprop_thMB=2048
-ro.slmk.freelimit_val=13
-ro.slmk.2nd.freelimit_val=15
-ro.slmk.swap_free_low_percentage=20
-ro.slmk.2nd.swap_free_low_percentage=10
-ro.slmk.beks_enable=true
-ro.slmk.beks_key=34
-ro.slmk.plg_memory_th=1024
-ro.slmk.plg_key=73
-ro.slmk.provider_upgrade_adj=true
-ro.slmk.use_lowmem_keep_except=true
-ro.slmk.enable_reentry_lmk=true
-
-# Security
-ro.hardware.keystore_desede=true
-keyguard.no_require_sim=true
-security.ASKS.policy_version=00000000
-security.ASKS.version=0
-security.ASKS.time_value=00000000
-security.ASKS.rufs_enable=true
-security.ADP.version=0
-security.ADP.policy_version=00000000
-security.securehw.available=false
-security.securenvm.available=false
-
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
 # Misc
 vendor.vidc.disable.split.mode=1
-ro.control_privapp_permissions=enforce
 ro.hardware.nfc_nci=nqx.default
-sys.config.activelaunch_enable=true
-ro.smps.enable=false
-sys.config.hardcoder.enable=false
-sys.config.ibs.enable=false
 dalvik.vm.lockprof.threshold=500
-ro.security.cass.feature=1
-ro.security.vpnpp.ver=2.2
-ro.security.vpnpp.release=1.0
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.qti.config.swap=1
 af.fast_track_multiplier=1
@@ -198,14 +152,5 @@ vendor.voice.record.conc.disabled=false
 vendor.voice.voip.conc.disabled=true
 vendor.voice.conc.fallbackpath=deep-buffer
 ro.af.client_heap_size_kbyte=7168
-ro.wt_final_release=1
-ro.build.scafe.version=2020A
 ro.config.vc_call_vol_steps=6
-ro.config.pageboost.vramdisk.bootfile.enabled=true
-ro.config.pageboost.io_prefetch.enabled=true
-ro.config.pageboost.io_prefetch.level=3
-ro.config.pageboost.active_launch.enabled=true
-ro.config.pageboost.active_launch.timeout=70
-ro.config.pageboost.vramdisk.without_predict=true
 persist.sys.kpm_onoff=false
-persist.sys.hardcoder.name=SecHardCoder
