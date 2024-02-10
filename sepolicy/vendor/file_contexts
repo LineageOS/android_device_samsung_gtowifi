@@ -30,6 +30,7 @@
 /mnt/vendor/efs/wifi(/.*)?									u:object_r:wifi_efs_file:s0
 
 # HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service-samsung		u:object_r:hal_health_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.samsung			u:object_r:hal_light_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@2\.0-service	u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.5-service\.samsung u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service-samsung		     u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.samsung			     u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.miscpower@2\.0-service	     u:object_r:hal_power_default_exec:s0
