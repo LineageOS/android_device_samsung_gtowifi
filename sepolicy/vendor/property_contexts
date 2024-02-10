@@ -2,3 +2,5 @@ persist.vendor.camera.	u:object_r:sec_camera_prop:s0
 vendor.bluetooth_fw_ver	u:object_r:vendor_bluetooth_prop:s0
 vendor.sys.qseecomd.	u:object_r:qseecom_prop:s0
 vendor.wlan.			u:object_r:vendor_wifi_prop:s0
+ro.camera.				u:object_r:camera_prop:s0
+persist.camera.			u:object_r:camera_prop:s0
