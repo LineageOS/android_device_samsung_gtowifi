@@ -71,6 +71,10 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
+SOONG_CONFIG_NAMESPACES += samsungCameraVars
+SOONG_CONFIG_samsungCameraVars += needs_sec_get_cam_pos_v1
+SOONG_CONFIG_samsungCameraVars_needs_sec_get_cam_pos_v2 := true
+
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
