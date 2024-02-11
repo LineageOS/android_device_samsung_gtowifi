@@ -4,6 +4,9 @@ dalvik.vm.dex2oat64.enabled=true
 # Fastbootd
 ro.fastbootd.available=true
 
+# GPS
+persist.backup.ntpServer=0.pool.ntp.org
+
 # LMKD/PSI
 ro.lmk.use_psi=true
 ro.lmk.low=1001
