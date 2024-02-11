@@ -3,3 +3,6 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Fastbootd
 ro.fastbootd.available=true
+
+# GPS
+persist.backup.ntpServer=0.pool.ntp.org
