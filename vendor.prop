@@ -116,9 +116,6 @@ ro.frp.pst=/dev/block/persistent
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
 
-# GPS
-persist.backup.ntpServer=0.pool.ntp.org
-
 # Media
 debug.stagefright.omx_default_rank=0
 
