@@ -116,7 +116,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Display
-TARGET_SCREEN_DENSITY := 213
+TARGET_SCREEN_DENSITY := 240
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/touchscreen/touchpanel/tap2wake"
 
 # Kernel
