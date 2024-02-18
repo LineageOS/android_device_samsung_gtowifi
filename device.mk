@@ -290,7 +290,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.time_daemon.rc \
     init.vendor.sysfw.rc \
-    init-qcril-data.rc \
     init_thermal-engine.rc \
     fstab.qcom \
     ueventd.qcom.rc
