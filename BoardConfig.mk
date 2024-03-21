@@ -187,6 +187,11 @@ BOARD_VNDK_VERSION := current
 # Vendor files
 include vendor/samsung/gtowifi/BoardConfigVendor.mk
 
+# USB
+TARGET_TRUST_USB_CONTROL_PATH := /sys/devices/soc/a800000.ssusb/usb_data_enabled
+TARGET_TRUST_USB_CONTROL_ENABLE := 1
+TARGET_TRUST_USB_CONTROL_DISABLE := 0
+
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
