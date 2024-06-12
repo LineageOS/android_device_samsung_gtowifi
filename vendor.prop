@@ -135,6 +135,11 @@ ro.telephony.iwlan_operation_mode=legacy
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
+# USB
+vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
+vendor.usb.use_gadget_hal=0
+
 # Misc
 vendor.vidc.disable.split.mode=1
 ro.hardware.nfc_nci=nqx.default
