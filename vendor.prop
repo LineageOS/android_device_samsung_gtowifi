@@ -116,9 +116,6 @@ ro.frp.pst=/dev/block/persistent
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
 
-# Media
-debug.stagefright.omx_default_rank=0
-
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
