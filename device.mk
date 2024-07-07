@@ -282,7 +282,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.can.sh \
-    init.gtowifi.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
