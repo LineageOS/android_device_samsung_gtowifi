@@ -95,6 +95,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk)
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
