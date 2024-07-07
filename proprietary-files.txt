@@ -1020,13 +1020,10 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
 # DRM-Widevine
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
-vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
-vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 
 # DSP
 vendor/bin/dspservice
