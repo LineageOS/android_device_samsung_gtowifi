@@ -286,7 +286,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qti.can.sh \
     init.qti.qseecomd.sh \
-    qca6234-service.sh \
     init.gtowifi.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
