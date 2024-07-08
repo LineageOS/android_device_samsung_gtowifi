@@ -1650,6 +1650,9 @@ vendor/bin/hw/mfgloader
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 
+# WiFi - from husky - husky-user 14 AP1A.240305.019.A1 11445699 release-keys
+vendor/bin/hw/wpa_supplicant|9a6f4dbe6498805dd7153ec9afd6f62c96eeb62a
+
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
