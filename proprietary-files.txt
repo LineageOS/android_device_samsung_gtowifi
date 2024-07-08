@@ -1649,6 +1649,9 @@ vendor/bin/hw/mfgloader
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 
+# WiFi - from barbet - barbet-user 14 AP1A.240505.004 11583682 release-keys
+vendor/bin/hw/wpa_supplicant|a919764157f8a5c022e932949cc9a1394a7da653
+
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
