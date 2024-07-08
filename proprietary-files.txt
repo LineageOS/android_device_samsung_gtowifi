@@ -1650,6 +1650,9 @@ vendor/bin/hw/mfgloader
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 
+# WiFi - from android-14.0.0_r35
+vendor/bin/hw/wpa_supplicant|b92a24b4281b8573ff813ad1b454f827a5519936
+
 # WiFi (WiGig)
 vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
 vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
