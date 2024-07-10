@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c793232_c73879e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-07-10T03:58:57Z",
+      "side": 1,
+      "message": "Really hoping for a better fix; but it does fix connecting to that one AP in my house (DIR-X3260)",
+      "revId": "88c5a8f2a87b5b722f56a45f56a5e2a29e6e3ab1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
