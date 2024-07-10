@@ -1090,7 +1090,6 @@ etc/firmware/aw87319r_rcv.bin
 etc/firmware/aw87319r_spk.bin
 etc/firmware/aw87319r_vspk.bin
 etc/firmware/ice40.bin
-etc/firmware/wlan/prima/WCNSS_cfg.dat
 vendor/firmware/a300_pfp.fw
 vendor/firmware/a300_pm4.fw
 vendor/firmware/a330_pfp.fw
