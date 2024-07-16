@@ -43,14 +43,6 @@ on boot
     setprop wifi.interface wlan0
 
 # start for WiFi MFG (TestMode)
-service mfgloader /vendor/bin/hw/mfgloader
-    class wlanfactorytest
-    user wifi
-    group wifi inet net_raw net_admin
-    capabilities NET_ADMIN NET_RAW SYS_MODULE
-    disabled
-    oneshot
-
 service macloader /vendor/bin/hw/macloader
     class main
     user wifi

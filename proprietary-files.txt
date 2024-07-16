@@ -1662,7 +1662,6 @@ vendor/lib64/libhdcpsrm.so
 
 # WiFi
 vendor/bin/hw/macloader
-vendor/bin/hw/mfgloader
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/etc/init/wifi_qcom.rc
