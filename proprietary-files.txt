@@ -1644,7 +1644,6 @@ vendor/lib64/libhdcpsrm.so
 # WiFi
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
-vendor/bin/hw/macloader
 vendor/etc/init/wifi_qcom.rc
 
 # WiFi (WiGig)
