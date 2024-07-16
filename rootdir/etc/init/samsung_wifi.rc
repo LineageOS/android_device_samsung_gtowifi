@@ -57,14 +57,5 @@ service macloader /vendor/bin/hw/macloader
     group wifi inet net_raw net_admin
     capabilities NET_ADMIN NET_RAW SYS_MODULE
     oneshot
-
-service wlandutservice /system/bin/wlandutservice
-    class wlanfactorytest
-    user system
-    group system wifi net_raw net_admin inet
-    capabilities NET_ADMIN NET_RAW
-    disabled
-    oneshot
-
 # end of WiFi MFG (TestMode)
 
