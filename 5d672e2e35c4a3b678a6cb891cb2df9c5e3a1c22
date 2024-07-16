@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "533fe8c5_bb5b54f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31496
+      },
+      "writtenOn": "2024-07-16T20:11:35Z",
+      "side": 1,
+      "message": "07-16 07:13:16.861  2840  2840 E macloader: Failed to open /dev/wcnss_ctrl : Bad address",
+      "revId": "5d672e2e35c4a3b678a6cb891cb2df9c5e3a1c22",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
