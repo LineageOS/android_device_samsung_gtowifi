@@ -293,6 +293,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.can.sh \
+    macloader.sh \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
