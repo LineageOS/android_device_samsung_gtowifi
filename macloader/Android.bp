@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2014 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "macloader_wcnss",
+    stem: "macloader",
+    relative_install_path: "hw",
+    srcs: ["main.c"],
+    shared_libs: [
+        "liblog",
+    ],
+    vendor: true,
+}
