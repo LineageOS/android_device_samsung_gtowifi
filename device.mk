@@ -290,7 +290,7 @@ PRODUCT_PACKAGES += \
     init.vendor.sysfw.rc \
     init-qcril-data.rc \
     init_thermal-engine.rc \
-    wifi.rc \
+    samsung_wifi.rc \
     fstab.qcom \
     ueventd.qcom.rc
 

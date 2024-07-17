@@ -210,10 +210,10 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := wifi.rc
+LOCAL_MODULE       := samsung_wifi.rc
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
-LOCAL_SRC_FILES    := etc/init/wifi.rc
+LOCAL_SRC_FILES    := etc/init/samsung_wifi.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init
 include $(BUILD_PREBUILT)
 
