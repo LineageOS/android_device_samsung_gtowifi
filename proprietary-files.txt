@@ -33,7 +33,6 @@ vendor/lib/libaudioalsa.so
 vendor/lib/libdrc.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libaudioeffectoffload.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -43,7 +42,6 @@ vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 -vendor/lib64/libaudioparsers.so
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudioeffectoffload.so
 
 # Audio-ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -54,12 +52,6 @@ vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-
-# Audio-Hardware
-vendor/lib/soundfx/libgearvr.so
-vendor/lib/soundfx/libplaybackrecorder.so
-vendor/lib/soundfx/libswdap.so
-vendor/lib64/soundfx/libswdap.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
