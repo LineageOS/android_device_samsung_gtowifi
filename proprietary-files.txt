@@ -1,5 +1,5 @@
 # All files below are from gtowifixx, unless otherwise specified
-# gtowifixx-user 11 RP1A.200720.012 T290XXU3CVG3 release-keys
+# gtoxx-user 11 RP1A.200720.012 T295XXS6CWG6 release-keys
 
 # ADSP
 vendor/bin/adsprpcd
