@@ -59,7 +59,7 @@
 #define MAX_ZOOMS_CNT 91
 #define ZOOM_MIN 4096        // min zoom value: 1x
 #define ZOOM_MAX 4096 * 8 // max zoom value: 8x
-#define MAX_SIZES_CNT 40
+#define MAX_SIZES_CNT 70
 #define MAX_EXP_BRACKETING_LENGTH 32
 #define MAX_ROI 10
 #define MAX_STREAM_NUM_IN_BUNDLE 8
@@ -1018,6 +1018,7 @@ typedef struct {
     uint32_t blur_level;
     uint32_t blur_min_value;
     uint32_t blur_max_value;
+    uint32_t gto_reserved[3];
 } cam_rtb_blur_info_t;
 
 typedef struct  {
@@ -2535,6 +2536,10 @@ typedef enum {
     CAM_INTF_PARM_CLOSE_HINT,
     CAM_INTF_META_SEND_IMMEDIATELY,
     CAM_INTF_PARAM_COUNTER,
+    CAM_INTF_GTO_RESERVED_1,
+    CAM_INTF_GTO_RESERVED_2,
+    CAM_INTF_GTO_RESERVED_3,
+    CAM_INTF_GTO_RESERVED_4,
     CAM_INTF_PARM_MAX
 } cam_intf_parm_type_t;
 
