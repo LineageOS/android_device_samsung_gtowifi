@@ -116,24 +116,19 @@ vendor/lib/vendor.qti.hardware.cvp@1.0.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Camera
-vendor/lib/hw/camera.msm8937.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libbase64.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
-vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libmm-qcamera.so
 vendor/lib/libmmjpeg.so
-vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
@@ -171,9 +166,6 @@ vendor/lib/libactuator_lc898217xc.so
 vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 vendor/lib/libactuator_zc535.so
-
-# Camera-bin
-vendor/bin/mm-qcamera-app
 
 # Camera-chromatix
 vendor/lib/libchromatix_bf2253L_common.so
@@ -801,7 +793,6 @@ vendor/lib/libmmcamera_imx362_gt24c64a.so
 vendor/lib/libmmcamera_imx376.so
 vendor/lib/libmmcamera_imx378.so
 vendor/lib/libmmcamera_imx519.so
-vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_irs1645.so
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
