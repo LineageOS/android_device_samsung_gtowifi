@@ -182,6 +182,9 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
+# Updater
+AB_OTA_UPDATER := false
+
 # Vendor files
 include vendor/samsung/gtowifi/BoardConfigVendor.mk
 
