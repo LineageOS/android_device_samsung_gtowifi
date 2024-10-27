@@ -299,6 +299,7 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    bootable/deprecated-ota \
     hardware/samsung \
     vendor/qcom/opensource/usb/etc
 
