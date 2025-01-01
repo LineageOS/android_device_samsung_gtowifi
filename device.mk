@@ -97,8 +97,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl \
-    hwcomposer.msm8937 \
     gralloc.msm8937 \
+    hwcomposer.qcom \
     libgralloc.qti \
     vulkan.pastel \
     vendor.qti.hardware.memtrack-service
