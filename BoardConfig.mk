@@ -152,7 +152,6 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_PROVIDES_KEYMASTER := true
 
 # Lights
-TARGET_PROVIDES_LIBLIGHT := true
 $(call soong_config_set,samsungVars,target_specific_header_path,$(DEVICE_PATH)/include)
 
 # QCOM
