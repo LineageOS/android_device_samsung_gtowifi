@@ -151,9 +151,6 @@ TARGET_KERNEL_VERSION := 4.9
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
-# Lights
-$(call soong_config_set,samsungVars,target_specific_header_path,$(DEVICE_PATH)/include)
-
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 

@@ -124,7 +124,7 @@ PRODUCT_COPY_FILES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.samsung
+    android.hardware.light-service.lineage
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
