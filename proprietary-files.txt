@@ -31,7 +31,7 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioalsa.so
--vendor/lib/libaudioparsers.so
+vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/soundfx/libasphere.so
@@ -42,7 +42,7 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
--vendor/lib64/libaudioparsers.so
+vendor/lib64/libaudioparsers.so
 vendor/lib64/soundfx/libasphere.so
 
 # Audio-ACDB
@@ -735,7 +735,7 @@ vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
 vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
-vendor/lib/libmmcamera_faceproc2.so;DISABLE_CHECKELF;FIX_SONAME
+vendor/lib/libmmcamera_faceproc2.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_gc2375a.so
 vendor/lib/libmmcamera_gc2375h.so
 vendor/lib/libmmcamera_gc2375h_lhyx.so
@@ -895,7 +895,7 @@ vendor/lib/libmmcamera_tuning_lookup.so
 vendor/bin/hvdcp_opti
 
 # DPM
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 system_ext/framework/com.qti.dpmframework.jar
 system_ext/framework/dpmapi.jar
 
@@ -948,7 +948,7 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 # DRM-Widevine
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
@@ -1005,14 +1005,14 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
-etc/firmware/AbovCapSense.BIN:vendor/firmware/AbovCapSense.BIN
-etc/firmware/aw87319l_rcv.bin:vendor/firmware/aw87319l_rcv.bin
-etc/firmware/aw87319l_spk.bin:vendor/firmware/aw87319l_spk.bin
-etc/firmware/aw87319l_vspk.bin:vendor/firmware/aw87319l_vspk.bin
-etc/firmware/aw87319r_rcv.bin:vendor/firmware/aw87319r_rcv.bin
-etc/firmware/aw87319r_spk.bin:vendor/firmware/aw87319r_spk.bin
-etc/firmware/aw87319r_vspk.bin:vendor/firmware/aw87319r_vspk.bin
-etc/firmware/ice40.bin:vendor/firmware/ice40.bin
+system/etc/firmware/AbovCapSense.BIN:vendor/firmware/AbovCapSense.BIN
+system/etc/firmware/aw87319l_rcv.bin:vendor/firmware/aw87319l_rcv.bin
+system/etc/firmware/aw87319l_spk.bin:vendor/firmware/aw87319l_spk.bin
+system/etc/firmware/aw87319l_vspk.bin:vendor/firmware/aw87319l_vspk.bin
+system/etc/firmware/aw87319r_rcv.bin:vendor/firmware/aw87319r_rcv.bin
+system/etc/firmware/aw87319r_spk.bin:vendor/firmware/aw87319r_spk.bin
+system/etc/firmware/aw87319r_vspk.bin:vendor/firmware/aw87319r_vspk.bin
+system/etc/firmware/ice40.bin:vendor/firmware/ice40.bin
 vendor/firmware/a300_pfp.fw
 vendor/firmware/a300_pm4.fw
 vendor/firmware/a330_pfp.fw
@@ -1054,7 +1054,7 @@ vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
@@ -1152,12 +1152,12 @@ vendor/lib64/libpvr.so
 # Graphics (SDM)
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
--vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
--vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
@@ -1402,7 +1402,7 @@ vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 
 # Time
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
