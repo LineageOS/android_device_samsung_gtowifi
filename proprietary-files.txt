@@ -735,7 +735,7 @@ vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
 vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
-vendor/lib/libmmcamera_faceproc2.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera_faceproc2.so;DISABLE_CHECKELF;FIX_SONAME
 vendor/lib/libmmcamera_gc2375a.so
 vendor/lib/libmmcamera_gc2375h.so
 vendor/lib/libmmcamera_gc2375h_lhyx.so
@@ -897,7 +897,7 @@ vendor/lib64/libmmcamera2_stats_algorithm.so
 vendor/lib64/libmmcamera2_stats_lib.so
 vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
-vendor/lib64/libmmcamera_faceproc2.so;DISABLE_CHECKELF
+vendor/lib64/libmmcamera_faceproc2.so;DISABLE_CHECKELF;FIX_SONAME
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
