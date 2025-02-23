@@ -116,7 +116,6 @@ vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 vendor/lib/libvideoutils.so
-vendor/lib/libwa_widelens_undistort.so
 vendor/lib64/libOpenCv.camera.samsung.so
 vendor/lib64/libbase64.so
 vendor/lib64/libcapiv2svacnn.so
@@ -886,7 +885,6 @@ vendor/lib/libmmcamera_truly_cma481_eeprom.so
 vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmcamera_westalgo_rtbokeh.so
 
 # Charger
 vendor/bin/hvdcp_opti
