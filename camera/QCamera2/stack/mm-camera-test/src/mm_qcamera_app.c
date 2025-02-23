@@ -1308,51 +1308,51 @@ int setFlipMode(mm_camera_test_obj_t *test_obj, cam_flip_t mode)
     memset(&param2, 0, sizeof(cam_stream_parm_buffer_t));
 
     if (test_obj->zsl_enabled)
-      channel =  &test_obj->channels[MM_CHANNEL_TYPE_ZSL];
+        channel =  &test_obj->channels[MM_CHANNEL_TYPE_ZSL];
     else
-      channel =  &test_obj->channels[MM_CHANNEL_TYPE_PREVIEW];
+        channel =  &test_obj->channels[MM_CHANNEL_TYPE_PREVIEW];
 
-      /* find snapshot stream */
-      for (i = 0; i < channel->num_streams; i++) {
-          if (channel->streams[i].s_config.stream_info->stream_type == CAM_STREAM_TYPE_SNAPSHOT) {
-              snapshot_stream = &channel->streams[i];
-              break;
-           }
-      }
+    /* find snapshot stream */
+    for (i = 0; i < channel->num_streams; i++) {
+        if (channel->streams[i].s_config.stream_info->stream_type == CAM_STREAM_TYPE_SNAPSHOT) {
+            snapshot_stream = &channel->streams[i];
+            break;
+        }
+    }
 
-      /* find preview stream */
-      for (i = 0; i < channel->num_streams; i++) {
-          if (channel->streams[i].s_config.stream_info->stream_type == CAM_STREAM_TYPE_PREVIEW) {
-              preview_stream = &channel->streams[i];
-              break;
-           }
-      }
+    /* find preview stream */
+    for (i = 0; i < channel->num_streams; i++) {
+        if (channel->streams[i].s_config.stream_info->stream_type == CAM_STREAM_TYPE_PREVIEW) {
+            preview_stream = &channel->streams[i];
+            break;
+        }
+    }
 
-       param.type = CAM_STREAM_PARAM_TYPE_SET_FLIP;
-       param.flipInfo.flip_mask = mode;
-       param2.type = CAM_STREAM_PARAM_TYPE_SET_FLIP;
-       param2.flipInfo.flip_mask = mode;
+    param.type = CAM_STREAM_PARAM_TYPE_SET_FLIP;
+    param.flipInfo.flip_mask = mode;
+    param2.type = CAM_STREAM_PARAM_TYPE_SET_FLIP;
+    param2.flipInfo.flip_mask = mode;
 
-       if (preview_stream != NULL) {
-          preview_stream->s_config.stream_info->parm_buf = param;
-          rc = test_obj->cam->ops->set_stream_parms(test_obj->cam->camera_handle,
-                                              channel->ch_id,
-                                              preview_stream->s_id,
-                                              &preview_stream->s_config.stream_info->parm_buf );
-      }
+    if (preview_stream != NULL) {
+        preview_stream->s_config.stream_info->parm_buf = param;
+        rc = test_obj->cam->ops->set_stream_parms(test_obj->cam->camera_handle,
+                                            channel->ch_id,
+                                            preview_stream->s_id,
+                                            &preview_stream->s_config.stream_info->parm_buf );
+    }
 
-       if (snapshot_stream != NULL){
-          snapshot_stream->s_config.stream_info->parm_buf = param2;
-          rc = test_obj->cam->ops->set_stream_parms(test_obj->cam->camera_handle,
-                                              channel->ch_id,
-                                              snapshot_stream->s_id,
-                                              &snapshot_stream->s_config.stream_info->parm_buf );
-      }
+    if (snapshot_stream != NULL){
+        snapshot_stream->s_config.stream_info->parm_buf = param2;
+        rc = test_obj->cam->ops->set_stream_parms(test_obj->cam->camera_handle,
+                                            channel->ch_id,
+                                            snapshot_stream->s_id,
+                                            &snapshot_stream->s_config.stream_info->parm_buf );
+    }
 
-     if (rc != MM_CAMERA_OK) {
+    if (rc != MM_CAMERA_OK) {
         LOGE("Batch parameters commit failed\n");
         goto ERROR;
-     }
+    }
 
     LOGE("Flip Mode set to: %d",  (int)mode);
 
