@@ -148,7 +148,3 @@
 /mnt/vendor/efs/vold(/.*)?                     u:object_r:sec_efs_file:s0
 /mnt/vendor/efs/wifi(/.*)?                     u:object_r:wifi_efs_file:s0
 /mnt/vendor/efs/wv\.keys                       u:object_r:sec_efs_file:s0
-
-# HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.5-service\.samsung u:object_r:hal_camera_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service-samsung		     u:object_r:hal_health_default_exec:s0
