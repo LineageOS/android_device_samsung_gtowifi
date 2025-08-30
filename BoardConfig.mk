@@ -148,6 +148,9 @@ TARGET_KERNEL_SOURCE := kernel/samsung/sdm429
 TARGET_KERNEL_CONFIG := lineageos_gtowifi_defconfig
 TARGET_KERNEL_VERSION := 4.9
 
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
