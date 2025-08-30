@@ -154,9 +154,6 @@ TARGET_PROVIDES_KEYMASTER := true
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
-# Media
-TARGET_USES_ION := true
-
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
